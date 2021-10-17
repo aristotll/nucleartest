@@ -25,4 +25,8 @@ func main() {
 	for _, v := range ss {
 		fmt.Printf("v: %v\n", v)
 	}
+
+	var a rune = '1'
+	var aa int = int(a - '0')
+	fmt.Printf("aa: %v\n", aa)
 }
