@@ -3,8 +3,8 @@
 using namespace std;
 
 class Student {
-private:
-public:
+   private:
+   public:
     string name;
     int age;
 
@@ -20,25 +20,19 @@ public:
     }
 
     // 重载 > 号
-    bool operator>(const Student& stu) {
-        return this->age > stu.age;
-    }
+    bool operator>(const Student& stu) { return this->age > stu.age; }
 };
 
-Student::Student() {
-
-}
+Student::Student() {}
 
 Student::Student(string name, int age) {
     this->name = name;
     this->age = age;
 }
 
-Student::~Student() {
-    
-}
+Student::~Student() {}
 
-int main(int argc, char const *argv[]) {
+int main(int argc, char const* argv[]) {
     Student s1("zhang3", 12);
     Student s2("li4", 20);
 
@@ -46,8 +40,7 @@ int main(int argc, char const *argv[]) {
 
     cout << ss.name << "  " << ss.age << endl;
 
-    s1 > s2 ? cout << "s1 > s2" << endl : 
-              cout << "s1 < s2" << endl;
-    
+    s1 > s2 ? cout << "s1 > s2" << endl : cout << "s1 < s2" << endl;
+
     return 0;
 }

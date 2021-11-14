@@ -10,26 +10,26 @@ type KV struct {
 }
 
 type gedis struct {
-	kv map[string]interface{}
+	kv    map[string]interface{}
 	watch *watcher
 }
 
 func NewGedis() *gedis {
 	return &gedis{
-		kv: make(map[string]interface{}),
+		kv:    make(map[string]interface{}),
 		watch: NewWatcher(),
 	}
 }
 
 type watcher struct {
 	watchKeys map[string]struct{}
-	ch chan *KV
+	ch        chan *KV
 }
 
 func NewWatcher() *watcher {
 	return &watcher{
 		watchKeys: make(map[string]struct{}),
-		ch: make(chan *KV),
+		ch:        make(chan *KV),
 	}
 }
 
@@ -48,6 +48,7 @@ func (g *gedis) Set(key string, val interface{}) {
 }
 
 func (w *watcher) checkoutWathcer(key string, val interface{}) {
+	// 如果当前 key 被监听
 	if _, ok := w.watchKeys[key]; ok {
 		w.ch <- &KV{
 			K: key,
@@ -55,4 +56,3 @@ func (w *watcher) checkoutWathcer(key string, val interface{}) {
 		}
 	}
 }
-
