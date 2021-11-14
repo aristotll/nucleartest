@@ -1,0 +1,2 @@
+parent write: [a, b, c] 
+child write: [1, 2, 3] 
