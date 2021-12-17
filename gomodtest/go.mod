@@ -3,10 +3,12 @@ module gomodtest
 go 1.16
 
 require (
+	github.com/beevik/etree v1.1.0 // indirect
 	github.com/bits-and-blooms/bitset v1.2.1 // indirect
 	github.com/bits-and-blooms/bloom/v3 v3.1.0
 	github.com/go-redis/redis/v8 v8.11.4
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da
+	github.com/google/gopacket v1.1.19 // indirect
 	github.com/google/uuid v1.3.0
 	github.com/huandu/skiplist v1.1.0
 	github.com/panjf2000/ants/v2 v2.4.6
