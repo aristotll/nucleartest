@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abec7235-214c-4829-afbe-6d71e0b18a4f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/gomodtest/netpacket/gopacket.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gomodtest/netpacket/gopacket_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gomodtest/parsexml/bigtest.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gomodtest/parsexml/bigtest_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gomodtest/parsexml/x.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gomodtest/parsexml/xml.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gomodtest/parsexml/xml_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gomodtest/parsexml/学籍卡.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gomodtest/parsexml/成绩单.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gomodtest/parsexml/成绩单_正确档案包.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gomodtest/parsexml/目录文件.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vim.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gomodtest/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/gomodtest/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gomodtest/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/gomodtest/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.check_array_is_increasing.go.swp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gomodtest/parsexml/bigtest.go" beforeDir="false" afterPath="$PROJECT_DIR$/gomodtest/parsexml/bigtest.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gomodtest/parsexml/bigtest_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/gomodtest/parsexml/bigtest_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,9 +70,12 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/gomodtest/parsexml" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gomodtest/parsexml" />
+    </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestParseCatalogFile in gomodtest/parsexml">
-    <configuration name="TestParse1 in gomodtest/parsexml" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Test.Test in gomodtest/parsexml">
+    <configuration name="Test in gomodtest/parsexml" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="justtest" />
       <working_directory value="$PROJECT_DIR$/gomodtest/parsexml" />
       <root_directory value="$PROJECT_DIR$/gomodtest" />
@@ -93,10 +84,10 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestParse1\E$" />
+      <pattern value="^\QTest\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestParseArchiveInformation in gomodtest/parsexml" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test1 in gomodtest/parsexml" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="justtest" />
       <working_directory value="$PROJECT_DIR$/gomodtest/parsexml" />
       <root_directory value="$PROJECT_DIR$/gomodtest" />
@@ -105,10 +96,10 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestParseArchiveInformation\E$" />
+      <pattern value="^\QTest1\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestParseArchives in gomodtest/parsexml" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test11 in gomodtest/parsexml" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="justtest" />
       <working_directory value="$PROJECT_DIR$/gomodtest/parsexml" />
       <root_directory value="$PROJECT_DIR$/gomodtest" />
@@ -117,10 +108,10 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestParseArchives\E$" />
+      <pattern value="^\QTest11\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestParseCatalogFile in gomodtest/parsexml" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test111 in gomodtest/parsexml" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="justtest" />
       <working_directory value="$PROJECT_DIR$/gomodtest/parsexml" />
       <root_directory value="$PROJECT_DIR$/gomodtest" />
@@ -129,10 +120,10 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestParseCatalogFile\E$" />
+      <pattern value="^\QTest111\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestParseMetaData in gomodtest/parsexml" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSpecialCase in gomodtest/parsexml" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="justtest" />
       <working_directory value="$PROJECT_DIR$/gomodtest/parsexml" />
       <root_directory value="$PROJECT_DIR$/gomodtest" />
@@ -141,16 +132,16 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestParseMetaData\E$" />
+      <pattern value="^\QTestSpecialCase\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestParseCatalogFile in gomodtest/parsexml" />
-        <item itemvalue="Go Test.TestParse1 in gomodtest/parsexml" />
-        <item itemvalue="Go Test.TestParseMetaData in gomodtest/parsexml" />
-        <item itemvalue="Go Test.TestParseArchiveInformation in gomodtest/parsexml" />
-        <item itemvalue="Go Test.TestParseArchives in gomodtest/parsexml" />
+        <item itemvalue="Go Test.Test in gomodtest/parsexml" />
+        <item itemvalue="Go Test.TestSpecialCase in gomodtest/parsexml" />
+        <item itemvalue="Go Test.Test111 in gomodtest/parsexml" />
+        <item itemvalue="Go Test.Test11 in gomodtest/parsexml" />
+        <item itemvalue="Go Test.Test1 in gomodtest/parsexml" />
       </list>
     </recent_temporary>
   </component>
