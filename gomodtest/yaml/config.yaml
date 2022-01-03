@@ -1,0 +1,8 @@
+mysql:
+  username: root
+  password: abc123
+cloudAdmin:
+  username: 123
+  password: 456
+cloudAddr: "www.baidu.com"
+nasAddr: "www.google.com"

@@ -8,6 +8,7 @@ require (
 	github.com/bits-and-blooms/bloom/v3 v3.1.0
 	github.com/go-redis/redis/v8 v8.11.4
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da
+	github.com/golang/protobuf v1.5.2
 	github.com/google/gopacket v1.1.19
 	github.com/google/uuid v1.3.0
 	github.com/huandu/skiplist v1.1.0
@@ -18,4 +19,5 @@ require (
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
 	golang.org/x/sys v0.0.0-20211019181941-9d821ace8654 // indirect
 	golang.org/x/text v0.3.7 // indirect
+	google.golang.org/protobuf v1.26.0
 )
