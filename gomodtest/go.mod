@@ -14,6 +14,7 @@ require (
 	github.com/huandu/skiplist v1.1.0
 	github.com/panjf2000/ants/v2 v2.4.6
 	github.com/quasoft/bloomflt v0.0.0-20180311192343-3b93d31da627
+	github.com/sony/sonyflake v1.0.0 // indirect
 	github.com/stretchr/testify v1.7.0 // indirect
 	golang.org/x/net v0.0.0-20211015210444-4f30a5c0130f // indirect
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
