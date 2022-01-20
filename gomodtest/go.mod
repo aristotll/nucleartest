@@ -12,6 +12,7 @@ require (
 	github.com/google/gopacket v1.1.19
 	github.com/google/uuid v1.3.0
 	github.com/huandu/skiplist v1.1.0
+	github.com/kr/pretty v0.3.0 // indirect
 	github.com/panjf2000/ants/v2 v2.4.6
 	github.com/quasoft/bloomflt v0.0.0-20180311192343-3b93d31da627
 	github.com/sony/sonyflake v1.0.0 // indirect
