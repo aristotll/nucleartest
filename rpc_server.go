@@ -37,6 +37,11 @@ func (s *Server) Div(r *Req, rr *Rsp) error {
 	return nil
 }
 
+func (s *Server) XX(a int64, b *int64) error {
+	*b = a * 10
+	return nil
+}
+
 func main() {
 	if err := rpc.Register(&Server{}); err != nil {
 		log.Fatalln(err)
@@ -46,14 +51,5 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
-
-	for {
-		conn, err := l.Accept()
-		if err != nil {
-			log.Fatalln(err)
-		}
-
-		go rpc.ServeConn(conn)
-	}
-
+	rpc.Accept(l)
 }

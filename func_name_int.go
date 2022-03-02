@@ -8,7 +8,7 @@ func int() {
 	fmt.Println(1)
 }
 
-func go() {}
+func Go() {}
 
 func main() {
 	int()

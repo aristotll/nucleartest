@@ -5,8 +5,6 @@ import (
 	"fmt"
 	"log"
 	"time"
-
-	"github.com/go-redis/redis/v8"
 )
 
 func Conn() *redis.Client {
@@ -28,11 +26,11 @@ func setNX(rdb *redis.Client, key, val, serverName string) {
 		if ok {
 			select {
 			case <-time.After(time.Second * 5):
-                del(rdb, key)
+				del(rdb, key)
 				fmt.Printf("%s 超时，被强制释放锁 \n", serverName)
 			case <-done:
-                del(rdb, key)
-                fmt.Printf("%s 正常释放锁 \n", serverName)
+				del(rdb, key)
+				fmt.Printf("%s 正常释放锁 \n", serverName)
 			}
 		}
 	}()
@@ -43,11 +41,11 @@ func setNX(rdb *redis.Client, key, val, serverName string) {
 		time.Sleep(time.Second * 3)
 		fmt.Println("处理完成")
 		done <- struct{}{} // 通知处理完成
-	} 
+	}
 }
 
 func del(rdb *redis.Client, key string) {
-	_, err := rdb.Del(context.Background(), "test").Result()
+	_, err := rdb.Del(context.Background(), "testgeneric").Result()
 	if err != nil {
 		log.Fatalln(err)
 	}

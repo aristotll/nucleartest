@@ -17,3 +17,36 @@ Data Units Written:                 232,655,226 [119 TB]
 [1.20]
 Data Units Read:                    244,625,532 [125 TB]
 Data Units Written:                 235,201,985 [120 TB]
+
+=================== new ===================
+[2.8]
+Data Units Read:                    2,916,424 [1.49 TB]
+Data Units Written:                 2,404,861 [1.23 TB]
+
+[2.9]
+Data Units Read:                    4,119,457 [2.10 TB]
+Data Units Written:                 3,487,975 [1.78 TB]
+
+[2.10] 22:18
+Data Units Read:                    6,327,427 [3.23 TB]
+Data Units Written:                 5,613,198 [2.87 TB]
+
+[2.11]
+Data Units Read:                    9,020,660 [4.61 TB]
+Data Units Written:                 8,183,673 [4.19 TB]
+
+[2.12]
+Data Units Read:                    11,043,228 [5.65 TB]
+Data Units Written:                 10,088,343 [5.16 TB]
+
+[2.13]
+Data Units Read:                    12,043,977 [6.16 TB]
+Data Units Written:                 11,027,008 [5.65 TB]
+
+[2.14]
+Data Units Read:                    13,499,172 [6.91 TB]
+Data Units Written:                 12,399,064 [6.34 TB]
+
+[2.15]
+Data Units Read:                    15,678,114 [8.02 TB]
+Data Units Written:                 14,496,312 [7.42 TB]

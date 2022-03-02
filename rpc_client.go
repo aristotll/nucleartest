@@ -24,6 +24,11 @@ func main() {
 	if err := c.Call("Server.Add", &Req{1, 2}, &rsp); err != nil {
 		log.Fatalln(err)
 	}
-
 	log.Printf("%+v \n", rsp)
+
+	var b int64
+	if err := c.Call("Server.XX", 10, &b); err != nil {
+		log.Fatalln(err)
+	}
+	log.Println(b)
 }

@@ -11,3 +11,7 @@ func Test1(t *testing.T) {
 	fmt.Printf("%d \n", 0x13)
 	fmt.Println(0xc == 0x13)
 }
+
+func Test11(t *testing.T) {
+	fmt.Println((1 + 9) >> 1)
+}

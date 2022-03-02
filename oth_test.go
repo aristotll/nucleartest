@@ -28,7 +28,7 @@ import (
 	"unsafe"
 )
 
-// =============== other test =================
+// =============== other testgeneric =================
 func TestChangeSlice(t *testing.T) {
 	n := []int{1, 2, 3, 4, 5}
 	fn := func(nums []int) {
@@ -1704,7 +1704,7 @@ func TestSysSelect(t *testing.T) {
 		}
 	}
 
-	//_, _ = syscall.Write(connfd, []byte("test"))
+	//_, _ = syscall.Write(connfd, []byte("testgeneric"))
 }
 
 // blog.csdn.net/gophers/article/details/33313959
@@ -1736,7 +1736,7 @@ func TestSysSocket(t *testing.T) {
 			continue
 		}
 		log.Printf("sockaddr: %+v", sa)
-		_, _ = syscall.Write(connfd, []byte("test"))
+		_, _ = syscall.Write(connfd, []byte("testgeneric"))
 	}
 }
 
@@ -3622,7 +3622,7 @@ func TestDial7070(t *testing.T) {
 func reverseStr1(s string, k int) string {
 	var (
 		lo, hi int
-		res string
+		res    string
 	)
 	for {
 		for i := 0; i < (2*k)-1; i++ {
@@ -3630,13 +3630,13 @@ func reverseStr1(s string, k int) string {
 				hi++
 			}
 		}
-		strlen := hi-lo+1
+		strlen := hi - lo + 1
 
 		if strlen < k {
 			res += reverse1(s, lo, hi)
 		} else if strlen < 2*k && strlen >= k {
 			res += reverse1(s, lo, lo+1)
-			return res   // 不足 2k 个，说明到最后一部分了
+			return res // 不足 2k 个，说明到最后一部分了
 		} else if strlen >= 2*k {
 			res += reverse1(s, lo, lo+1)
 		}
@@ -3655,9 +3655,58 @@ func reverse1(s string, i, j int) string {
 		j--
 	}
 
-	return string(s1[i:j+1])
+	return string(s1[i : j+1])
 }
 
 func TestStrReverse1(t *testing.T) {
 	reverseStr1("abcdefg", 2)
+}
+
+func format() {
+	// p = 1
+	pr := findPath(root, p, &path, &res, &flag)
+	for i := 0; i < len(pr); i++ {
+		fmt.Printf("%v ", pr[i]) // Output: [3, 1]
+	}
+	fmt.Println()
+
+	flag = false
+	// p = 4
+	qr := findPath(root, q, &path, &res, &flag)
+
+	for i := 0; i < len(qr); i++ {
+		fmt.Printf("%v ", qr[i]) // Output: [3,5,2,4]
+	}
+}
+
+func findPath(root, need *TreeNode, path, res *[]*TreeNode, flag *bool) {
+	if root == nil || *flag {
+		return
+	}
+	*path = append(*path, root)
+	if root == need {
+		*flag = true
+		// copy 一个新切片，防止多个 res 指向同一个 path
+		news := make([]*TreeNode, len(*path))
+		copy(news, *path)
+		*res = news
+		return
+	}
+
+	findPath(root.Left, need, path, res, flag)
+	findPath(root.Right, need, path, res, flag)
+
+	*path = (*path)[:len(*path)-1]
+	return
+}
+
+func main() {
+	var path, pp, qq []*TreeNode
+	var flag bool
+	findPath(root, p, &path, &pp, &flag)
+	// 重置参数
+	flag = false
+	path = path[0:0]
+	findPath(root, q, &path, &qq, &flag)
+	// 此时 pp 和 qq 已经保存了结果
 }

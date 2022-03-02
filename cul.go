@@ -1,9 +1,10 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 func main() {
-    fmt.Println(1<<16)
+	fmt.Println(1 << 16)
+
 }

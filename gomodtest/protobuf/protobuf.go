@@ -4,12 +4,11 @@ import (
 	"github.com/golang/protobuf/proto"
 	pb "gomodtest/protobuf/proto"
 	"log"
-	"strings"
 )
 
 func main() {
 	pb.NewEchoClient()
-	sct := &pb.Request{Message: "echo test"}
+	sct := &pb.Request{Message: "echo testgeneric"}
 	b, err := proto.Marshal(sct)
 	if err != nil {
 		log.Fatalln(err)
@@ -21,5 +20,3 @@ func main() {
 	}
 	log.Printf("%+v\n", o)
 }
-
-

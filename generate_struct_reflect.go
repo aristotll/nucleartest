@@ -6,7 +6,8 @@ import (
 	"reflect"
 )
 
-// 构造器
+type s struct {
+	// 构造器
 	// 用于存储属性字段
 	fileId []reflect.StructField
 }
@@ -30,7 +31,7 @@ func (b *Builder) Build() *Struct {
 		index[stu.Field(i).Name] = i
 	}
 	return &Struct{
-		typ: stu, 
+		typ:   stu,
 		index: index,
 	}
 }
@@ -66,8 +67,8 @@ type Struct struct {
 // 根据结构体类型创建一个实例化
 func (s Struct) New() *Instance {
 	return &Instance{
-		instance: reflect.New(s.typ).Elem(), 
-		index: s.index,
+		instance: reflect.New(s.typ).Elem(),
+		index:    s.index,
 	}
 }
 
