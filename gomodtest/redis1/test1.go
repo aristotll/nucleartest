@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"time"
+	"github.com/go-redis/redis/v8"
 )
 
 func Conn() *redis.Client {

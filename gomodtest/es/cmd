@@ -1,0 +1,46 @@
+GET /megacorp/_search
+{
+  "query": {
+    "match": {
+      "last_name": "smith"
+    }
+  }
+}
+
+GET /megacorp/_mapping
+
+DELETE /megacorp
+
+GET /megacorp/_search
+
+GET /megacorp/_search
+{
+  "query": {
+    "match": {
+      "last_name": "smith"
+    },
+    "range": {
+      "age": {
+        "gt": 30
+      }
+    }
+  }
+}
+
+GET /megacorp/_search
+{
+    "query" : {
+        "bool": {
+            "must": {
+                "match" : {
+                    "last_name" : "smith" 
+                }
+            },
+            "filter": {
+                "range" : {
+                    "age" : { "gt" : 30 } 
+                }
+            }
+        }
+    }
+}

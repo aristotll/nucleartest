@@ -1,0 +1,24 @@
+version: '3'
+
+# 如果修改了文件，希望重新进行 build，则使用 docker-compose up --build
+# 否则使用 docker-compose up
+# 参考：https://docker.github.io/get-involved/docs/communityleaders/eventhandbooks/go/compose/
+services:
+  app:
+    build: 
+      context: . # Use an image built from the specified dockerfile in the current directory.
+      dockerfile: Dockerfile
+    depends_on: 
+      - redis # This service depends on redis. Start that first.  
+    ports:
+      - "6666:6666"
+    networks:
+      - backend  
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
+    networks:
+    - backend
+networks:
+  backend:   
