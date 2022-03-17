@@ -31,4 +31,11 @@ func main() {
 		log.Fatalln(err)
 	}
 	log.Println(b)
+
+	var d int64
+	// 调用一个未注册的方法
+	if err := c.Call("UNREGISTER_SERVICE.FUNC", 10, &d); err != nil {
+		log.Fatalln(err)
+	}
+	_ = d
 }

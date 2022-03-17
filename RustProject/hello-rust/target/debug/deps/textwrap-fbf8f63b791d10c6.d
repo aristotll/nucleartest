@@ -1,0 +1,11 @@
+/Users/zenghao/pj/justtest/RustProject/hello-rust/target/debug/deps/textwrap-fbf8f63b791d10c6.rmeta: /Users/zenghao/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/lib.rs /Users/zenghao/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/indentation.rs /Users/zenghao/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/splitting.rs /Users/zenghao/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/core.rs /Users/zenghao/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/core/optimal_fit.rs
+
+/Users/zenghao/pj/justtest/RustProject/hello-rust/target/debug/deps/libtextwrap-fbf8f63b791d10c6.rlib: /Users/zenghao/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/lib.rs /Users/zenghao/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/indentation.rs /Users/zenghao/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/splitting.rs /Users/zenghao/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/core.rs /Users/zenghao/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/core/optimal_fit.rs
+
+/Users/zenghao/pj/justtest/RustProject/hello-rust/target/debug/deps/textwrap-fbf8f63b791d10c6.d: /Users/zenghao/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/lib.rs /Users/zenghao/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/indentation.rs /Users/zenghao/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/splitting.rs /Users/zenghao/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/core.rs /Users/zenghao/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/core/optimal_fit.rs
+
+/Users/zenghao/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/lib.rs:
+/Users/zenghao/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/indentation.rs:
+/Users/zenghao/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/splitting.rs:
+/Users/zenghao/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/core.rs:
+/Users/zenghao/.cargo/registry/src/github.com-1ecc6299db9ec823/textwrap-0.13.4/src/core/optimal_fit.rs:
