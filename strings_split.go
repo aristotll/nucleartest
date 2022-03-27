@@ -13,4 +13,8 @@ func main() {
 		fmt.Printf("[%v] -> %v \n", index+1, val)
 	} 
 	//fmt.Println(ss)
+
+	s = "localhost:8080"
+	ss = strings.Split(s, ":")
+	fmt.Println(ss)
 }
