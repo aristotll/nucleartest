@@ -14,5 +14,4 @@ func main() {
 	fmt.Println(lo.Map[int64, string]([]int64{1, 2, 3, 4, 5}, func(x int64, _ int) string {
 		return strconv.FormatInt(x, 10)
 	}))
-
 }

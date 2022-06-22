@@ -1,0 +1,10 @@
+(gdb) p $x29
+$1 = 281474976707360
+
+(gdb) p &buf
+$3 = (char (*)[10]) 0xfffffffff340
+
+(gdb) info register x29
+x29            0xfffffffff320      281474976707360
+
+

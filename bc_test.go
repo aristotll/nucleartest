@@ -15,3 +15,10 @@ func Test1(t *testing.T) {
 func Test11(t *testing.T) {
 	fmt.Println((1 + 9) >> 1)
 }
+
+func Test2(t *testing.T) {
+	fmt.Printf("%x\n", 0x7fffffffe820-0x8)
+	fmt.Printf("%x\n", 0x7fffffffe818-0x8)
+	fmt.Printf("%x\n", 0x820-0x8)
+	fmt.Printf("%x\n", 0x818-0x8)
+}

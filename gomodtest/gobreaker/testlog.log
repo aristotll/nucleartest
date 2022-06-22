@@ -1,0 +1,279 @@
+2022/06/10 22:02:36 closed, {Requests:1 TotalSuccesses:1 TotalFailures:0 ConsecutiveSuccesses:1 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:36 closed, {Requests:2 TotalSuccesses:2 TotalFailures:0 ConsecutiveSuccesses:2 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:37 closed, {Requests:3 TotalSuccesses:3 TotalFailures:0 ConsecutiveSuccesses:3 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:37 closed, {Requests:4 TotalSuccesses:4 TotalFailures:0 ConsecutiveSuccesses:4 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:38 closed, {Requests:5 TotalSuccesses:5 TotalFailures:0 ConsecutiveSuccesses:5 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:38 [500]Internal Server Error
+2022/06/10 22:02:38 closed, {Requests:6 TotalSuccesses:5 TotalFailures:1 ConsecutiveSuccesses:0 ConsecutiveFailures:1}
+
+2022/06/10 22:02:39 [500]Internal Server Error
+2022/06/10 22:02:39 closed, {Requests:7 TotalSuccesses:5 TotalFailures:2 ConsecutiveSuccesses:0 ConsecutiveFailures:2}
+
+2022/06/10 22:02:39 [500]Internal Server Error
+2022/06/10 22:02:39 closed, {Requests:8 TotalSuccesses:5 TotalFailures:3 ConsecutiveSuccesses:0 ConsecutiveFailures:3}
+
+2022/06/10 22:02:40 [500]Internal Server Error
+2022/06/10 22:02:40 closed, {Requests:9 TotalSuccesses:5 TotalFailures:4 ConsecutiveSuccesses:0 ConsecutiveFailures:4}
+
+2022/06/10 22:02:40 closed, {Requests:10 TotalSuccesses:6 TotalFailures:4 ConsecutiveSuccesses:1 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:41 closed, {Requests:11 TotalSuccesses:7 TotalFailures:4 ConsecutiveSuccesses:2 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:41 closed, {Requests:12 TotalSuccesses:8 TotalFailures:4 ConsecutiveSuccesses:3 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:42 closed, {Requests:13 TotalSuccesses:9 TotalFailures:4 ConsecutiveSuccesses:4 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:42 closed, {Requests:14 TotalSuccesses:10 TotalFailures:4 ConsecutiveSuccesses:5 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:43 closed, {Requests:15 TotalSuccesses:11 TotalFailures:4 ConsecutiveSuccesses:6 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:43 closed, {Requests:16 TotalSuccesses:12 TotalFailures:4 ConsecutiveSuccesses:7 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:44 closed, {Requests:17 TotalSuccesses:13 TotalFailures:4 ConsecutiveSuccesses:8 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:44 closed, {Requests:18 TotalSuccesses:14 TotalFailures:4 ConsecutiveSuccesses:9 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:45 closed, {Requests:19 TotalSuccesses:15 TotalFailures:4 ConsecutiveSuccesses:10 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:45 closed, {Requests:20 TotalSuccesses:16 TotalFailures:4 ConsecutiveSuccesses:11 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:46 closed, {Requests:21 TotalSuccesses:17 TotalFailures:4 ConsecutiveSuccesses:12 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:46 closed, {Requests:22 TotalSuccesses:18 TotalFailures:4 ConsecutiveSuccesses:13 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:47 closed, {Requests:23 TotalSuccesses:19 TotalFailures:4 ConsecutiveSuccesses:14 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:47 closed, {Requests:24 TotalSuccesses:20 TotalFailures:4 ConsecutiveSuccesses:15 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:48 closed, {Requests:25 TotalSuccesses:21 TotalFailures:4 ConsecutiveSuccesses:16 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:48 closed, {Requests:26 TotalSuccesses:22 TotalFailures:4 ConsecutiveSuccesses:17 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:49 closed, {Requests:27 TotalSuccesses:23 TotalFailures:4 ConsecutiveSuccesses:18 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:49 closed, {Requests:28 TotalSuccesses:24 TotalFailures:4 ConsecutiveSuccesses:19 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:50 closed, {Requests:29 TotalSuccesses:25 TotalFailures:4 ConsecutiveSuccesses:20 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:50 closed, {Requests:30 TotalSuccesses:26 TotalFailures:4 ConsecutiveSuccesses:21 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:51 closed, {Requests:31 TotalSuccesses:27 TotalFailures:4 ConsecutiveSuccesses:22 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:51 [500]Internal Server Error
+2022/06/10 22:02:51 closed, {Requests:32 TotalSuccesses:27 TotalFailures:5 ConsecutiveSuccesses:0 ConsecutiveFailures:1}
+
+2022/06/10 22:02:52 [500]Internal Server Error
+2022/06/10 22:02:52 closed, {Requests:33 TotalSuccesses:27 TotalFailures:6 ConsecutiveSuccesses:0 ConsecutiveFailures:2}
+
+2022/06/10 22:02:52 [500]Internal Server Error
+2022/06/10 22:02:52 closed, {Requests:34 TotalSuccesses:27 TotalFailures:7 ConsecutiveSuccesses:0 ConsecutiveFailures:3}
+
+2022/06/10 22:02:53 [500]Internal Server Error
+2022/06/10 22:02:53 closed, {Requests:35 TotalSuccesses:27 TotalFailures:8 ConsecutiveSuccesses:0 ConsecutiveFailures:4}
+
+2022/06/10 22:02:53 [500]Internal Server Error
+2022/06/10 22:02:53 closed, {Requests:36 TotalSuccesses:27 TotalFailures:9 ConsecutiveSuccesses:0 ConsecutiveFailures:5}
+
+2022/06/10 22:02:54 [500]Internal Server Error
+2022/06/10 22:02:54 closed, {Requests:37 TotalSuccesses:27 TotalFailures:10 ConsecutiveSuccesses:0 ConsecutiveFailures:6}
+
+2022/06/10 22:02:54 [500]Internal Server Error
+2022/06/10 22:02:54 closed, {Requests:38 TotalSuccesses:27 TotalFailures:11 ConsecutiveSuccesses:0 ConsecutiveFailures:7}
+
+2022/06/10 22:02:55 [500]Internal Server Error
+2022/06/10 22:02:55 closed, {Requests:39 TotalSuccesses:27 TotalFailures:12 ConsecutiveSuccesses:0 ConsecutiveFailures:8}
+
+2022/06/10 22:02:55 [500]Internal Server Error
+2022/06/10 22:02:55 closed, {Requests:40 TotalSuccesses:27 TotalFailures:13 ConsecutiveSuccesses:0 ConsecutiveFailures:9}
+
+2022/06/10 22:02:56 [500]Internal Server Error
+2022/06/10 22:02:56 closed, {Requests:41 TotalSuccesses:27 TotalFailures:14 ConsecutiveSuccesses:0 ConsecutiveFailures:10}
+
+2022/06/10 22:02:56 [500]Internal Server Error
+2022/06/10 22:02:56 closed, {Requests:42 TotalSuccesses:27 TotalFailures:15 ConsecutiveSuccesses:0 ConsecutiveFailures:11}
+
+2022/06/10 22:02:57 [500]Internal Server Error
+2022/06/10 22:02:57 closed, {Requests:43 TotalSuccesses:27 TotalFailures:16 ConsecutiveSuccesses:0 ConsecutiveFailures:12}
+
+2022/06/10 22:02:57 [500]Internal Server Error
+2022/06/10 22:02:57 closed, {Requests:44 TotalSuccesses:27 TotalFailures:17 ConsecutiveSuccesses:0 ConsecutiveFailures:13}
+
+2022/06/10 22:02:58 [500]Internal Server Error
+2022/06/10 22:02:58 closed, {Requests:45 TotalSuccesses:27 TotalFailures:18 ConsecutiveSuccesses:0 ConsecutiveFailures:14}
+
+2022/06/10 22:02:58 closed, {Requests:46 TotalSuccesses:28 TotalFailures:18 ConsecutiveSuccesses:1 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:59 closed, {Requests:47 TotalSuccesses:29 TotalFailures:18 ConsecutiveSuccesses:2 ConsecutiveFailures:0}
+success
+2022/06/10 22:02:59 closed, {Requests:48 TotalSuccesses:30 TotalFailures:18 ConsecutiveSuccesses:3 ConsecutiveFailures:0}
+success
+2022/06/10 22:03:00 closed, {Requests:49 TotalSuccesses:31 TotalFailures:18 ConsecutiveSuccesses:4 ConsecutiveFailures:0}
+success
+2022/06/10 22:03:00 closed, {Requests:50 TotalSuccesses:32 TotalFailures:18 ConsecutiveSuccesses:5 ConsecutiveFailures:0}
+success
+2022/06/10 22:03:01 closed, {Requests:51 TotalSuccesses:33 TotalFailures:18 ConsecutiveSuccesses:6 ConsecutiveFailures:0}
+success
+2022/06/10 22:03:01 closed, {Requests:52 TotalSuccesses:34 TotalFailures:18 ConsecutiveSuccesses:7 ConsecutiveFailures:0}
+success
+2022/06/10 22:03:02 closed, {Requests:53 TotalSuccesses:35 TotalFailures:18 ConsecutiveSuccesses:8 ConsecutiveFailures:0}
+success
+2022/06/10 22:03:02 closed, {Requests:54 TotalSuccesses:36 TotalFailures:18 ConsecutiveSuccesses:9 ConsecutiveFailures:0}
+success
+2022/06/10 22:03:03 closed, {Requests:55 TotalSuccesses:37 TotalFailures:18 ConsecutiveSuccesses:10 ConsecutiveFailures:0}
+success
+2022/06/10 22:03:03 closed, {Requests:56 TotalSuccesses:38 TotalFailures:18 ConsecutiveSuccesses:11 ConsecutiveFailures:0}
+success
+2022/06/10 22:03:04 closed, {Requests:57 TotalSuccesses:39 TotalFailures:18 ConsecutiveSuccesses:12 ConsecutiveFailures:0}
+success
+2022/06/10 22:03:04 closed, {Requests:58 TotalSuccesses:40 TotalFailures:18 ConsecutiveSuccesses:13 ConsecutiveFailures:0}
+success
+2022/06/10 22:03:05 closed, {Requests:59 TotalSuccesses:41 TotalFailures:18 ConsecutiveSuccesses:14 ConsecutiveFailures:0}
+success
+2022/06/10 22:03:05 closed, {Requests:60 TotalSuccesses:42 TotalFailures:18 ConsecutiveSuccesses:15 ConsecutiveFailures:0}
+success
+2022/06/10 22:03:06 closed, {Requests:61 TotalSuccesses:43 TotalFailures:18 ConsecutiveSuccesses:16 ConsecutiveFailures:0}
+success
+2022/06/10 22:03:06 [500]Internal Server Error
+2022/06/10 22:03:06 closed, {Requests:62 TotalSuccesses:43 TotalFailures:19 ConsecutiveSuccesses:0 ConsecutiveFailures:1}
+
+2022/06/10 22:03:07 [500]Internal Server Error
+2022/06/10 22:03:07 closed, {Requests:63 TotalSuccesses:43 TotalFailures:20 ConsecutiveSuccesses:0 ConsecutiveFailures:2}
+
+2022/06/10 22:03:07 [500]Internal Server Error
+2022/06/10 22:03:07 closed, {Requests:64 TotalSuccesses:43 TotalFailures:21 ConsecutiveSuccesses:0 ConsecutiveFailures:3}
+
+2022/06/10 22:03:08 [500]Internal Server Error
+2022/06/10 22:03:08 closed, {Requests:65 TotalSuccesses:43 TotalFailures:22 ConsecutiveSuccesses:0 ConsecutiveFailures:4}
+
+2022/06/10 22:03:08 [500]Internal Server Error
+2022/06/10 22:03:08 closed, {Requests:66 TotalSuccesses:43 TotalFailures:23 ConsecutiveSuccesses:0 ConsecutiveFailures:5}
+
+2022/06/10 22:03:09 [500]Internal Server Error
+2022/06/10 22:03:09 closed, {Requests:67 TotalSuccesses:43 TotalFailures:24 ConsecutiveSuccesses:0 ConsecutiveFailures:6}
+
+2022/06/10 22:03:09 [500]Internal Server Error
+2022/06/10 22:03:09 closed, {Requests:68 TotalSuccesses:43 TotalFailures:25 ConsecutiveSuccesses:0 ConsecutiveFailures:7}
+
+2022/06/10 22:03:10 [500]Internal Server Error
+2022/06/10 22:03:10 closed, {Requests:69 TotalSuccesses:43 TotalFailures:26 ConsecutiveSuccesses:0 ConsecutiveFailures:8}
+
+2022/06/10 22:03:10 [500]Internal Server Error
+2022/06/10 22:03:10 closed, {Requests:70 TotalSuccesses:43 TotalFailures:27 ConsecutiveSuccesses:0 ConsecutiveFailures:9}
+
+2022/06/10 22:03:11 [500]Internal Server Error
+2022/06/10 22:03:11 closed, {Requests:71 TotalSuccesses:43 TotalFailures:28 ConsecutiveSuccesses:0 ConsecutiveFailures:10}
+
+2022/06/10 22:03:11 [500]Internal Server Error
+2022/06/10 22:03:11 closed, {Requests:72 TotalSuccesses:43 TotalFailures:29 ConsecutiveSuccesses:0 ConsecutiveFailures:11}
+
+2022/06/10 22:03:12 [500]Internal Server Error
+2022/06/10 22:03:12 closed, {Requests:73 TotalSuccesses:43 TotalFailures:30 ConsecutiveSuccesses:0 ConsecutiveFailures:12}
+
+2022/06/10 22:03:12 [500]Internal Server Error
+2022/06/10 22:03:12 closed, {Requests:74 TotalSuccesses:43 TotalFailures:31 ConsecutiveSuccesses:0 ConsecutiveFailures:13}
+
+2022/06/10 22:03:13 [500]Internal Server Error
+2022/06/10 22:03:13 closed, {Requests:75 TotalSuccesses:43 TotalFailures:32 ConsecutiveSuccesses:0 ConsecutiveFailures:14}
+
+2022/06/10 22:03:13 [500]Internal Server Error
+2022/06/10 22:03:13 closed, {Requests:76 TotalSuccesses:43 TotalFailures:33 ConsecutiveSuccesses:0 ConsecutiveFailures:15}
+
+2022/06/10 22:03:14 [500]Internal Server Error
+2022/06/10 22:03:14 closed, {Requests:77 TotalSuccesses:43 TotalFailures:34 ConsecutiveSuccesses:0 ConsecutiveFailures:16}
+
+2022/06/10 22:03:14 [500]Internal Server Error
+2022/06/10 22:03:14 closed, {Requests:78 TotalSuccesses:43 TotalFailures:35 ConsecutiveSuccesses:0 ConsecutiveFailures:17}
+
+2022/06/10 22:03:15 [500]Internal Server Error
+2022/06/10 22:03:15 closed, {Requests:79 TotalSuccesses:43 TotalFailures:36 ConsecutiveSuccesses:0 ConsecutiveFailures:18}
+
+2022/06/10 22:03:15 closed, {Requests:80 TotalSuccesses:44 TotalFailures:36 ConsecutiveSuccesses:1 ConsecutiveFailures:0}
+success
+2022/06/10 22:03:16 closed, {Requests:81 TotalSuccesses:45 TotalFailures:36 ConsecutiveSuccesses:2 ConsecutiveFailures:0}
+success
+2022/06/10 22:03:16 closed, {Requests:82 TotalSuccesses:46 TotalFailures:36 ConsecutiveSuccesses:3 ConsecutiveFailures:0}
+success
+2022/06/10 22:03:17 closed, {Requests:83 TotalSuccesses:47 TotalFailures:36 ConsecutiveSuccesses:4 ConsecutiveFailures:0}
+success
+2022/06/10 22:03:17 closed, {Requests:84 TotalSuccesses:48 TotalFailures:36 ConsecutiveSuccesses:5 ConsecutiveFailures:0}
+success
+2022/06/10 22:03:18 closed, {Requests:85 TotalSuccesses:49 TotalFailures:36 ConsecutiveSuccesses:6 ConsecutiveFailures:0}
+success
+2022/06/10 22:03:18 [500]Internal Server Error
+2022/06/10 22:03:18 closed, {Requests:86 TotalSuccesses:49 TotalFailures:37 ConsecutiveSuccesses:0 ConsecutiveFailures:1}
+
+2022/06/10 22:03:19 [500]Internal Server Error
+2022/06/10 22:03:19 closed, {Requests:87 TotalSuccesses:49 TotalFailures:38 ConsecutiveSuccesses:0 ConsecutiveFailures:2}
+
+2022/06/10 22:03:19 [500]Internal Server Error
+2022/06/10 22:03:19 closed, {Requests:88 TotalSuccesses:49 TotalFailures:39 ConsecutiveSuccesses:0 ConsecutiveFailures:3}
+
+2022/06/10 22:03:20 [500]Internal Server Error
+2022/06/10 22:03:20 closed, {Requests:89 TotalSuccesses:49 TotalFailures:40 ConsecutiveSuccesses:0 ConsecutiveFailures:4}
+
+2022/06/10 22:03:20 [500]Internal Server Error
+2022/06/10 22:03:20 closed, {Requests:90 TotalSuccesses:49 TotalFailures:41 ConsecutiveSuccesses:0 ConsecutiveFailures:5}
+
+2022/06/10 22:03:21 [500]Internal Server Error
+2022/06/10 22:03:21 closed, {Requests:91 TotalSuccesses:49 TotalFailures:42 ConsecutiveSuccesses:0 ConsecutiveFailures:6}
+
+2022/06/10 22:03:21 closed, {Requests:92 TotalSuccesses:50 TotalFailures:42 ConsecutiveSuccesses:1 ConsecutiveFailures:0}
+success
+2022/06/10 22:03:22 closed, {Requests:93 TotalSuccesses:51 TotalFailures:42 ConsecutiveSuccesses:2 ConsecutiveFailures:0}
+success
+2022/06/10 22:03:22 [500]Internal Server Error
+2022/06/10 22:03:22 closed, {Requests:94 TotalSuccesses:51 TotalFailures:43 ConsecutiveSuccesses:0 ConsecutiveFailures:1}
+
+2022/06/10 22:03:23 [500]Internal Server Error
+2022/06/10 22:03:23 closed, {Requests:95 TotalSuccesses:51 TotalFailures:44 ConsecutiveSuccesses:0 ConsecutiveFailures:2}
+
+2022/06/10 22:03:23 [500]Internal Server Error
+2022/06/10 22:03:23 closed, {Requests:96 TotalSuccesses:51 TotalFailures:45 ConsecutiveSuccesses:0 ConsecutiveFailures:3}
+
+2022/06/10 22:03:24 [500]Internal Server Error
+2022/06/10 22:03:24 closed, {Requests:97 TotalSuccesses:51 TotalFailures:46 ConsecutiveSuccesses:0 ConsecutiveFailures:4}
+
+2022/06/10 22:03:24 [500]Internal Server Error
+2022/06/10 22:03:24 closed, {Requests:98 TotalSuccesses:51 TotalFailures:47 ConsecutiveSuccesses:0 ConsecutiveFailures:5}
+
+2022/06/10 22:03:25 [500]Internal Server Error
+2022/06/10 22:03:25 closed, {Requests:99 TotalSuccesses:51 TotalFailures:48 ConsecutiveSuccesses:0 ConsecutiveFailures:6}
+
+2022/06/10 22:03:25 [500]Internal Server Error
+2022/06/10 22:03:25 closed, {Requests:100 TotalSuccesses:51 TotalFailures:49 ConsecutiveSuccesses:0 ConsecutiveFailures:7}
+
+2022/06/10 22:03:26 [500]Internal Server Error
+2022/06/10 22:03:26 closed, {Requests:101 TotalSuccesses:51 TotalFailures:50 ConsecutiveSuccesses:0 ConsecutiveFailures:8}
+
+2022/06/10 22:03:26 state change: [closed] -> [open]
+2022/06/10 22:03:26 [500]Internal Server Error
+2022/06/10 22:03:26 open, {Requests:0 TotalSuccesses:0 TotalFailures:0 ConsecutiveSuccesses:0 ConsecutiveFailures:0}
+
+2022/06/10 22:03:27 circuit breaker is open
+2022/06/10 22:03:27 open, {Requests:0 TotalSuccesses:0 TotalFailures:0 ConsecutiveSuccesses:0 ConsecutiveFailures:0}
+
+2022/06/10 22:03:27 circuit breaker is open
+2022/06/10 22:03:27 open, {Requests:0 TotalSuccesses:0 TotalFailures:0 ConsecutiveSuccesses:0 ConsecutiveFailures:0}
+
+2022/06/10 22:03:28 circuit breaker is open
+2022/06/10 22:03:28 open, {Requests:0 TotalSuccesses:0 TotalFailures:0 ConsecutiveSuccesses:0 ConsecutiveFailures:0}
+
+2022/06/10 22:03:28 circuit breaker is open
+2022/06/10 22:03:28 open, {Requests:0 TotalSuccesses:0 TotalFailures:0 ConsecutiveSuccesses:0 ConsecutiveFailures:0}
+
+2022/06/10 22:03:29 circuit breaker is open
+2022/06/10 22:03:29 open, {Requests:0 TotalSuccesses:0 TotalFailures:0 ConsecutiveSuccesses:0 ConsecutiveFailures:0}
+
+2022/06/10 22:03:29 circuit breaker is open
+2022/06/10 22:03:29 open, {Requests:0 TotalSuccesses:0 TotalFailures:0 ConsecutiveSuccesses:0 ConsecutiveFailures:0}
+
+2022/06/10 22:03:30 circuit breaker is open
+2022/06/10 22:03:30 open, {Requests:0 TotalSuccesses:0 TotalFailures:0 ConsecutiveSuccesses:0 ConsecutiveFailures:0}
+
+2022/06/10 22:03:30 circuit breaker is open
+2022/06/10 22:03:30 open, {Requests:0 TotalSuccesses:0 TotalFailures:0 ConsecutiveSuccesses:0 ConsecutiveFailures:0}

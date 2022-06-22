@@ -3,20 +3,10 @@ package redis1
 import (
 	"context"
 	"fmt"
+	"github.com/go-redis/redis/v8"
 	"log"
 	"time"
-	"github.com/go-redis/redis/v8"
 )
-
-func Conn() *redis.Client {
-	rdb := redis.NewClient(&redis.Options{
-		Addr:     "localhost:6379",
-		Password: "", // no password set
-		DB:       0,  // use default DB
-	})
-
-	return rdb
-}
 
 func setNX(rdb *redis.Client, key, val, serverName string) {
 	bc := rdb.SetNX(context.Background(), key, val, time.Second*5)

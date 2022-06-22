@@ -9,8 +9,8 @@ func main() {
 	s1 := []int{1, 2, 3, 4, 5}
 	s2 := []int{6, 7, 8, 9, 10}
 
-	slices.Delete(s1, 1, 2)
-	fmt.Println(s1)
+	s11 := slices.Delete(s1, 1, 3)
+	fmt.Println(s11)
 
 	index := slices.Index(s1, 3)
 	println(index)
@@ -27,5 +27,9 @@ func main() {
 	ss3 := slices.Clone(s3)
 	fmt.Println(ss3)
 
-	slices.Insert(s3, 1, 5)
+	ss33 := slices.Insert(s3, 1, 5)
+	fmt.Println(ss33)
+	
+	slices.Sort(ss33)
+	fmt.Println(ss33)
 }

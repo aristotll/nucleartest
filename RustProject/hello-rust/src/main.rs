@@ -1,3 +1,7 @@
+mod method;
+mod option;
+mod vector;
+
 use ferris_says::say;
 use std::io::{stdout, BufWriter};
 

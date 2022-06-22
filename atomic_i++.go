@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"sync"
+	"sync/atomic"
 	_ "sync/atomic"
 	"time"
 )
@@ -17,11 +18,11 @@ func main() {
 	for i := 0; i < count; i++ {
 		go func() {
 			defer wg.Done()
-			//atomic.CompareAndSwapInt64(&n, n, n+1)
+			atomic.CompareAndSwapInt64(&n, n, n+1)
 			a = 3
 			b = a
 		}()
-		//fmt.Println(atomic.LoadInt64(&n))
+		fmt.Println(atomic.LoadInt64(&n))
 
 		go func() {
 			defer wg.Done()

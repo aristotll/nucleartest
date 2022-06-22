@@ -50,3 +50,134 @@ Data Units Written:                 12,399,064 [6.34 TB]
 [2.15]
 Data Units Read:                    15,678,114 [8.02 TB]
 Data Units Written:                 14,496,312 [7.42 TB]
+
+[4.5]
+Data Units Read:                    127,944,209 [65.5 TB]
+Data Units Written:                 120,482,591 [61.6 TB]
+
+[4.6] 16:46
+Available Spare Threshold:          99%
+Percentage Used:                    4%
+Data Units Read:                    133,183,228 [68.1 TB]
+Data Units Written:                 125,504,215 [64.2 TB]
+
+[4.7] 21:05
+Percentage Used:                    4%
+Data Units Read:                    140,784,514 [72.0 TB]
+Data Units Written:                 132,763,191 [67.9 TB]
+
+[4.9] 10:06
+Available Spare Threshold:          99%
+Percentage Used:                    4%
+Data Units Read:                    144,086,637 [73.7 TB]
+Data Units Written:                 135,799,590 [69.5 TB]
+
+[4.10] 23:53
+Available Spare Threshold:          99%
+Percentage Used:                    4%
+Data Units Read:                    148,293,090 [75.9 TB]
+Data Units Written:                 139,717,340 [71.5 TB]
+
+[4.11] 22:38
+Available Spare Threshold:          99%
+Percentage Used:                    4%
+Data Units Read:                    151,234,913 [77.4 TB]
+Data Units Written:                 142,461,939 [72.9 TB]
+
+[4.13] 21:32
+Available Spare Threshold:          99%
+Percentage Used:                    4%
+Data Units Read:                    152,389,822 [78.0 TB]
+Data Units Written:                 143,366,434 [73.4 TB]
+
+[4.16] 01:00
+Available Spare Threshold:          99%
+Percentage Used:                    4%
+Data Units Read:                    153,998,503 [78.8 TB]
+Data Units Written:                 144,733,232 [74.1 TB]
+
+[4.17] 15:21
+Available Spare Threshold:          99%
+Percentage Used:                    4%
+Data Units Read:                    154,618,236 [79.1 TB]
+Data Units Written:                 145,206,961 [74.3 TB]
+
+[4.18] 23:47
+Available Spare Threshold:          99%
+Percentage Used:                    4%
+Data Units Read:                    155,096,199 [79.4 TB]
+Data Units Written:                 145,544,879 [74.5 TB]
+
+[4.19] 22:38
+Available Spare Threshold:          99%
+Percentage Used:                    4%
+Data Units Read:                    155,534,308 [79.6 TB]
+Data Units Written:                 145,851,570 [74.6 TB]
+
+[4.21] 10:32
+Available Spare Threshold:          99%
+Percentage Used:                    4%
+Data Units Read:                    156,319,167 [80.0 TB]
+Data Units Written:                 146,451,773 [74.9 TB]
+
+[4.23] 22:32
+Available Spare Threshold:          99%
+Percentage Used:                    4%
+Data Units Read:                    159,043,085 [81.4 TB]
+Data Units Written:                 148,734,050 [76.1 TB]
+
+[4.25] 00:28
+Available Spare Threshold:          99%
+Percentage Used:                    4%
+Data Units Read:                    159,531,758 [81.6 TB]
+Data Units Written:                 149,112,293 [76.3 TB]
+
+[4.27] 12:06
+Available Spare Threshold:          99%
+Percentage Used:                    4%
+Data Units Read:                    160,882,471 [82.3 TB]
+Data Units Written:                 149,963,791 [76.7 TB]
+
+[4.29] 11:20 
+Available Spare Threshold:          99%
+Percentage Used:                    4%
+Data Units Read:                    164,350,044 [84.1 TB]
+Data Units Written:                 152,420,094 [78.0 TB]
+
+[5.4] 17:31
+Available Spare Threshold:          99%
+Percentage Used:                    5%
+Data Units Read:                    170,978,360 [87.5 TB]
+Data Units Written:                 157,229,823 [80.5 TB]
+
+[5.8] 20:17
+Available Spare Threshold:          99%
+Percentage Used:                    5%
+Data Units Read:                    173,621,751 [88.8 TB]
+Data Units Written:                 159,088,150 [81.4 TB]
+
+[5.17] 11:54
+Available Spare Threshold:          99%
+Percentage Used:                    5%
+Data Units Read:                    181,230,679 [92.7 TB]
+Data Units Written:                 165,359,112 [84.6 TB]
+
+[5.25] 22:49
+Available Spare Threshold:          99%
+Percentage Used:                    6%
+Data Units Read:                    204,862,585 [104 TB]
+Data Units Written:                 187,373,590 [95.9 TB]
+
+[5.27] 21:51
+Available Spare Threshold:          99%
+Percentage Used:                    6%
+Data Units Read:                    212,656,903 [108 TB]
+Data Units Written:                 194,722,643 [99.6 TB]
+
+[6.10] 01:07
+Available Spare Threshold:          99%
+Percentage Used:                    7%
+Data Units Read:                    238,205,556 [121 TB]
+Data Units Written:                 216,043,938 [110 TB]
+
+

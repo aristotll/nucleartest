@@ -2,9 +2,11 @@ package main
 
 import (
 	"context"
-	clientv3 "go.etcd.io/etcd/client/v3"
+	"fmt"
 	"log"
 	"time"
+
+	clientv3 "go.etcd.io/etcd/client/v3"
 )
 
 func main() {
@@ -16,7 +18,7 @@ func main() {
 		log.Fatalln(err)
 	}
 
-	watchChan := cli.Watch(context.Background(), "", clientv3.WithPrefix())
+	watchChan := cli.Watch(context.Background(), "", clientv3.WithPrefix(), clientv3.WithPrevKV())
 	for {
 		select {
 		case resp := <-watchChan:
@@ -35,6 +37,7 @@ func main() {
 						log.Printf(
 							"[update event]: key=%v, val=%v\n",
 							string(event.Kv.Key), string(event.Kv.Value))
+							fmt.Printf("event.PrevKv: %v\n", event.PrevKv)
 					}
 				case clientv3.EventTypeDelete:
 					log.Printf("[delete event]: key=%v\n", string(event.Kv.Key))
