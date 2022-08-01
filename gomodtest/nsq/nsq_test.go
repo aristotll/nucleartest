@@ -1,8 +1,8 @@
-package main
+package nsq
 
 import "testing"
 
-// keepalive 貌似不能从 os.stdin 中读取，下面会立马结束，production() 需要在 main 中运行
+// test 函数貌似不能从 os.stdin 中读取，下面会立马结束，producer() 需要在 main 中运行
 func TestProduction(t *testing.T) {
 	production()
 }

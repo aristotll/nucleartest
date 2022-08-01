@@ -1,4 +1,4 @@
-package main
+package nsq
 
 import (
 	"bufio"
@@ -11,7 +11,7 @@ import (
 var producer *nsq.Producer
 
 const (
-	topic             = "keepalive"
+	topic             = "room1"
 	nsqdAddr          = "127.0.0.1:4150"
 	nsqLookupHttpAddr = "127.0.0.1:4161"
 	nsqLookupTcpAddr  = "127.0.0.1:4160"
@@ -34,7 +34,7 @@ func production() {
 			fmt.Println("bye~")
 			break
 		}
-		if err := producer.Publish("keepalive", []byte(text)); err != nil {
+		if err := producer.Publish(topic, []byte(text)); err != nil {
 			log.Println("publish error: ", err)
 			break
 		}
@@ -50,10 +50,13 @@ func (m *MyHandler) HandleMessage(msg *nsq.Message) error {
 	return nil
 }
 
+var channel1 = "userId:1"
+var channel2 = "userId:2"
+
 // topic: keepalive | channel: chan1 | ConnectToNSQD()
 func consumption1() {
 	config := nsq.NewConfig()
-	consumer, err := nsq.NewConsumer(topic, "chan1", config)
+	consumer, err := nsq.NewConsumer(topic, channel1, config)
 	if err != nil {
 		log.Println(err)
 		return
@@ -70,7 +73,7 @@ func consumption1() {
 // topic: keepalive | channel: chan2 | ConnectToNSQD()
 func consumption2() {
 	config := nsq.NewConfig()
-	consumer, err := nsq.NewConsumer(topic, "chan2", config)
+	consumer, err := nsq.NewConsumer(topic, channel2, config)
 	if err != nil {
 		log.Println(err)
 		return

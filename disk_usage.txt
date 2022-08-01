@@ -180,4 +180,22 @@ Percentage Used:                    7%
 Data Units Read:                    238,205,556 [121 TB]
 Data Units Written:                 216,043,938 [110 TB]
 
+[7.2]
+Available Spare Threshold:          99%
+Percentage Used:                    7%
+Data Units Read:                    265,321,790 [135 TB]
+Data Units Written:                 237,720,298 [121 TB]
+
+[7.13]
+Available Spare Threshold:          99%
+Percentage Used:                    7%
+Data Units Read:                    272,484,374 [139 TB]
+Data Units Written:                 243,194,411 [124 TB]
+
+[7.19]
+Available Spare Threshold:          99%
+Percentage Used:                    8%
+Data Units Read:                    276,969,227 [141 TB]
+Data Units Written:                 246,851,595 [126 TB]
+
 

@@ -11,7 +11,7 @@ func init() {
 	log.SetFlags(log.Lshortfile)
 }
 
-var stream = NewStream(Conn())
+var stream = NewStream(Conn(), &Config{ShowCmd: true})
 
 func TestXADD(t *testing.T) {
 	m := map[string]string{
@@ -50,5 +50,36 @@ func TestXREAD(t *testing.T) {
 	}
 	for _, stream := range xread {
 		log.Printf("%+v\n", stream)
+	}
+}
+
+func TestXGROUP(t *testing.T) {
+	groupName := "g1"
+	stream_ := "mq"
+	err := stream.CreatGroup(context.Background(), groupName, stream_, "0")
+	if err != nil {
+		t.Fatal(err)
+	}
+	t.Logf("%v create ok\n", groupName)
+}
+
+func TestXINFO_GROUP(t *testing.T) {
+	stream_ := "mq"
+	info, err := stream.GroupInfo(context.Background(), stream_)
+	if err != nil {
+		t.Log("err: ", err.Error())
+	}
+	t.Logf("%+v\n", info)
+}
+
+func Test_XREADGROUP(t *testing.T) {
+	groupName := "mq"
+	consumerName := "zhang3"
+	count := int64(1)
+	streams := []string{"mq"}
+	res, err := stream.GroupConsume(context.Background(), groupName, consumerName,
+		count, streams, 0, false)
+	if err != nil {
+
 	}
 }

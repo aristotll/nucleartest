@@ -1,6 +1,8 @@
 package redis1
 
-import "github.com/go-redis/redis/v8"
+import (
+	"github.com/go-redis/redis/v9"
+)
 
 func Conn() *redis.Client {
 	rdb := redis.NewClient(&redis.Options{

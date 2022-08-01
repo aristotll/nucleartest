@@ -3,7 +3,7 @@ package redis1
 import (
 	"context"
 	"fmt"
-	"github.com/go-redis/redis/v8"
+	"github.com/go-redis/redis/v9"
 	"log"
 	"time"
 )
