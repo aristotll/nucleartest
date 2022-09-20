@@ -1,7 +1,7 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 func checkRoles(roles []string) bool {
@@ -17,12 +17,12 @@ func checkRoles(roles []string) bool {
 }
 
 func main() {
-    s := []string{"aaa", "admin"}
-    fmt.Println(checkRoles(s))
+	s := []string{"aaa", "admin"}
+	fmt.Println(checkRoles(s))
 
-    s = []string{"user", "admin"}
-    fmt.Println(checkRoles(s))
+	s = []string{"user", "admin"}
+	fmt.Println(checkRoles(s))
 
-    s = []string{"aa", "bb"}
-    fmt.Println(checkRoles(s))
+	s = []string{"aa", "bb"}
+	fmt.Println(checkRoles(s))
 }

@@ -16,7 +16,7 @@ func main() {
 			ch <- 1
 			time.Sleep(time.Second)
 		}
-		close(ch)	// 一定要 close，不然 range 会死锁
+		close(ch) // 一定要 close，不然 range 会死锁
 	}()
 
 	for v := range ch {

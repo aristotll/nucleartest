@@ -1,10 +1,10 @@
 package main
 
 import (
-	"net/rpc"
-	"log"
 	"flag"
 	"fmt"
+	"log"
+	"net/rpc"
 )
 
 func init() {
@@ -37,7 +37,7 @@ func main() {
 	}
 
 	var (
-		req = &Request{Command: *cmd}
+		req  = &Request{Command: *cmd}
 		resp = &Response{}
 	)
 

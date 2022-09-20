@@ -1,0 +1,16 @@
+syntax = "proto3";
+// option go_package = "services";
+package pb;
+
+import "models.proto";
+
+message OrderCreateResponse {
+  // 创建状态
+  string status = 1;
+  string message = 2;
+}
+
+service OrderService {
+  // 创建订单
+  rpc NewOrder(OrderInfo) returns (OrderCreateResponse);
+}

@@ -1,26 +1,26 @@
 package main
 
 import (
-    "net"
-    "log"
+	"log"
+	"net"
 )
 
 func main() {
-    l, err := net.Listen("tcp", ":7070")
-    if err != nil {
-        log.Fatalln(err)
-    }
+	l, err := net.Listen("tcp", ":7070")
+	if err != nil {
+		log.Fatalln(err)
+	}
 
-    defer l.Close()
+	defer l.Close()
 
-    for {
-        conn, err := l.Accept()
-        if err != nil {
-            log.Println(err)
-            continue
-        }
+	for {
+		conn, err := l.Accept()
+		if err != nil {
+			log.Println(err)
+			continue
+		}
 
-        conn.Write([]byte("ok"))
-        conn.Close()
-    }
+		conn.Write([]byte("ok"))
+		conn.Close()
+	}
 }

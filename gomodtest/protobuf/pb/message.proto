@@ -1,0 +1,9 @@
+syntax="proto3";
+option go_package = "/pbfile";
+import "google/protobuf/wrappers.proto";
+
+message Message {
+  google.protobuf.UInt64Value uid = 1;
+  bytes data = 2;
+  google.protobuf.StringValue messageType = 3;
+}

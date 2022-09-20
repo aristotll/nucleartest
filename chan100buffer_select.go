@@ -11,7 +11,7 @@ func main() {
 	go func() {
 		for {
 			select {
-			case v := <- ch1:
+			case v := <-ch1:
 				fmt.Println(v)
 			}
 		}

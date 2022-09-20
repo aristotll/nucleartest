@@ -13,7 +13,7 @@ func main() {
 	m[1] = 1
 	count := 100
 	for i := 0; i < count; i++ {
-		go func (i int) {
+		go func(i int) {
 			fmt.Printf("[%d] m: %v\n", i, m[1])
 		}(i)
 	}

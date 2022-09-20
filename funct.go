@@ -4,7 +4,7 @@ import "fmt"
 
 type fn func(int, int) int
 
-type S1 struct {}
+type S1 struct{}
 
 type Struct struct {
 	fn

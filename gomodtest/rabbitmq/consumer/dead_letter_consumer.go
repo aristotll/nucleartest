@@ -33,7 +33,7 @@ func main() {
 		msgs, err := ch.Consume(
 			queueName,
 			"",
-			false,	// auto-ack
+			false, // auto-ack
 			false,
 			false,
 			false,
@@ -45,13 +45,13 @@ func main() {
 			//  RabbitMQ 不会为未确认的消息设置过期时间，它判断此消息是否需要重新投递给消费者的
 			// 唯一依据是消费该消息的消费者连接是否己经断开，这么设计的原因是 RabbitMQ 允许消费者
 			// 消费一条消息的时间可以很久很久。
-			t := time.Duration(rand.Intn(5) + 10) * time.Second
+			t := time.Duration(rand.Intn(5)+10) * time.Second
 			log.Printf("处理所需时间：%v\n", t)
 			time.Sleep(t)
 			msg.Ack(false)
 			// 第二个参数：requeue：代表是否将这条消息重新放入队列，如果重新放回，这可以被其他消费者
 			// 继续消费，否则这条消息会丢失
-			// msg.Nack(false, true)	
+			// msg.Nack(false, true)
 		}
 	}()
 

@@ -1,13 +1,13 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 func search(arr []int, target int) {
-    
+
 }
 
 func main() {
-    
+
 }

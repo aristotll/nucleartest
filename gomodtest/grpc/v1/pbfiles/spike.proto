@@ -1,0 +1,18 @@
+syntax = "proto3";
+// option go_package = "services";
+package pb;
+
+import "models.proto";
+
+message SpikeOrderRequest {
+  repeated SpikeUserOrder spikeOrder = 1;
+}
+
+message SpikeOrderResponse {
+  repeated string messages = 1;
+}
+
+service SpikeOrderService {
+  rpc SubmitOrder(stream SpikeOrderRequest) returns (stream SpikeOrderResponse);
+}
+

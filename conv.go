@@ -16,7 +16,7 @@ func conv(s string) []rune {
 
 	for _, c := range s {
 		if unicode.IsDigit(rune(c)) {
-			res = append(res, c) 
+			res = append(res, c)
 		}
 		if c == '(' {
 			stack.PushBack(c)

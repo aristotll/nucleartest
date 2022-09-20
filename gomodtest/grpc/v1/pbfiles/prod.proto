@@ -1,0 +1,41 @@
+syntax = "proto3";
+// option go_package = "services";
+package pb;
+
+import "models.proto";
+
+enum ProdAreas {
+  // 国区
+  CHINESE = 0;
+  // 俄区
+  RUSSIA = 1;
+  // 欧洲区(不含俄)
+  EUROPE = 2;
+  // 美区
+  AMERICA = 3;
+}
+
+message ProdRequest {
+  // 传入的商品 id
+  int32 prod_id = 1;
+  // 购买区域
+  ProdAreas area = 2;
+}
+
+message ProdResponse {
+  // 商品库存
+  int32 prod_stock = 1;
+  // 商品信息
+  // ProdModel prodInfo = 2;
+}
+
+message ProdResponseList {
+  // repeated: 声明一个数组变量
+  repeated ProdResponse list = 1;
+}
+
+service ProdService {
+  rpc GetProdStock(ProdRequest) returns (ProdResponse);
+  rpc GetProdStocks(ProdRequest) returns (ProdResponseList);
+  rpc GetProdInfo(ProdRequest) returns (ProdModel);
+}

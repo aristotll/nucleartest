@@ -21,11 +21,10 @@ func (c *Class) Do(x, y int) {
 }
 
 func main() {
-	c := &Class{fn: func(x, y int) int {return x + y}}
+	c := &Class{fn: func(x, y int) int { return x + y }}
 	c.Do(1, 2)
 
 	cc := &Class{}
 	cc.DoSafe(1, 2)
 	cc.Do(1, 2)
 }
-

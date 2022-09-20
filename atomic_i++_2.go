@@ -18,11 +18,12 @@ func main() {
 	for i := 0; int64(i) < n; i++ {
 		go func() {
 			defer wg.Done()
-			for !atomic.CompareAndSwapInt64(&num, num, num+1) {}
+			for !atomic.CompareAndSwapInt64(&num, num, num+1) {
+			}
 			fmt.Println(num)
 		}()
 	}
-	
+
 	wg.Wait()
 	fmt.Println("result: ", num)
 }

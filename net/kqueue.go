@@ -21,7 +21,6 @@ func init() {
 // 入到读事件分支，进行 Read 操作，此时会报错 bad file descriptor，continue 到最外层死循环，如此反复，
 // 直到循环很多次以后会抛出一个 panic
 
-
 // BUG 记录：
 // 1. 客户端断开连接后，服务端仍然会产生读事件，此时 Read 会发生 connection reset by peer 错误并 Close 掉
 // 连接，但是仍然会发生读事件，导致 Kevent 成功返回，然后 setNonBlock(event.Ident) 会报错：bad file descriptor
@@ -43,7 +42,7 @@ func main() {
 	}
 
 	var (
-		changes = make([]Kevent_t, 0) // 监听列表
+		changes = make([]Kevent_t, 0)        // 监听列表
 		events  = make([]Kevent_t, eventNum) // 发生的事件列表，len 不能为 0
 	)
 

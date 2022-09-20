@@ -1,20 +1,20 @@
 package main
 
 import (
-    "fmt"
-    "time"
+	"fmt"
+	"time"
 )
 
 var c = make(chan int)
 
 func main() {
-    go func() {
-        c <- 1
-    }()
+	go func() {
+		c <- 1
+	}()
 
-    go func() {
-        fmt.Println(<-c)
-    }()
+	go func() {
+		fmt.Println(<-c)
+	}()
 
-    time.Sleep(time.Second * 3)
+	time.Sleep(time.Second * 3)
 }

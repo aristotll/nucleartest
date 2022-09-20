@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func findRepeatNumber(nums []int) int {
-	for i := 0; i < len(nums);  {
+	for i := 0; i < len(nums); {
 		if nums[i] == nums[nums[i]] {
 			return nums[i]
 		}

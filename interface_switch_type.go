@@ -8,7 +8,7 @@ type i interface {
 	f(int, int) int
 }
 
-type s struct {}
+type s struct{}
 
 func (s) f(x, y int) int {
 	return x + y

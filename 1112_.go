@@ -1,7 +1,7 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 func distinctRoles(roles []string) []string {
@@ -19,11 +19,11 @@ func distinctRoles(roles []string) []string {
 }
 
 func main() {
-    s := []string{"admin", "admin", "user", "user"}
-    s = distinctRoles(s)
-    fmt.Println(s)
+	s := []string{"admin", "admin", "user", "user"}
+	s = distinctRoles(s)
+	fmt.Println(s)
 
-    s1 := []string{"admin", "admin"}
-    s1 = distinctRoles(s1)
-    fmt.Println(s1)
+	s1 := []string{"admin", "admin"}
+	s1 = distinctRoles(s1)
+	fmt.Println(s1)
 }

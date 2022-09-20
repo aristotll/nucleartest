@@ -22,6 +22,6 @@ func backtrack(s, cur string, res *[]string, start int) {
 
 func main() {
 	var res []string
-	backtrack("qwe", "qwe", &res, 0)	
+	backtrack("qwe", "qwe", &res, 0)
 	fmt.Println(res)
 }

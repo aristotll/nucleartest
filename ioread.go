@@ -8,8 +8,8 @@ import (
 
 func main() {
 	var (
-		buf = make([]byte, 10)
-		str = strings.NewReader("12345")
+		buf  = make([]byte, 10)
+		str  = strings.NewReader("12345")
 		str1 = strings.NewReader("abcde")
 	)
 

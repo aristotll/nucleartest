@@ -6,7 +6,7 @@ import (
 )
 
 func P(v float64) {
-	fmt.Println(math.Round(v))	
+	fmt.Println(math.Round(v))
 }
 
 func main() {

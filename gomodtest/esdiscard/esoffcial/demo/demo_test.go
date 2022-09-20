@@ -9,5 +9,3 @@ func TestUsage(t *testing.T) {
 func TestAPI(t *testing.T) {
 	API()
 }
-
-

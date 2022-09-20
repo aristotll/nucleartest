@@ -1,8 +1,8 @@
 package main
 
 import (
-	"os"
 	"fmt"
+	"os"
 )
 
 func main() {
@@ -10,6 +10,6 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	
+
 	fmt.Println(curDir)
 }

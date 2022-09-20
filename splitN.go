@@ -1,15 +1,15 @@
 package main
 
 import (
-	"strings"
-	"fmt"
 	"flag"
+	"fmt"
+	"strings"
 )
 
 var (
 	str = flag.String("s", "", "input a string")
 	sep = flag.String("p", "", "分隔符")
-	n = flag.Int("n", 0, "input N")
+	n   = flag.Int("n", 0, "input N")
 )
 
 func main() {

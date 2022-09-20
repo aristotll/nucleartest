@@ -26,8 +26,8 @@ func main() {
 	content := string(b)
 
 	for len(content) > 0 {
-		i := strings.Index(content, "func") // 找到第一个 func
-		i2 := strings.Index(content[i:], "(")   // 找到第一个 func 之后的第一个 (
+		i := strings.Index(content, "func")   // 找到第一个 func
+		i2 := strings.Index(content[i:], "(") // 找到第一个 func 之后的第一个 (
 		if i2 == -1 {
 			break
 		}

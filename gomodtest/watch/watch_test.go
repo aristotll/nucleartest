@@ -19,12 +19,12 @@ func TestSet(t *testing.T) {
 }
 
 func TestWatch(t *testing.T) {
-	
+
 	g.Watch("name")
 	log.Println(g.watch.watchKeys)
 }
 func Test1(t *testing.T) {
-	go func ()  {
+	go func() {
 		g.Watch("name")
 	}()
 

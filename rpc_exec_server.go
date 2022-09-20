@@ -11,7 +11,7 @@ import (
 
 // TODO build a rpc server in client side
 
-type Server struct {}
+type Server struct{}
 
 func (s *Server) ExecCommand(req *Request, resp *Response) error {
 	cmd := exec.Command(req.Command)

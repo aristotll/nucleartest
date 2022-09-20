@@ -1,4 +1,4 @@
-package main	//golang 唯一的神
+package main //golang 唯一的神
 
 import (
 	"fmt"
@@ -30,6 +30,3 @@ func main() {
 	twoDone <- 1            //2个线程启动后才开始输出
 	time.Sleep(time.Second) //防止主线程退出后，子线程没运行完毕
 }
-
-
-

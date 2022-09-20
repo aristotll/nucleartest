@@ -1,11 +1,11 @@
 package main
 
 import (
-    "private/xstruct"
-    "fmt"
+	"fmt"
+	"private/xstruct"
 )
 
 func main() {
-    v := xstruct.Retpriv()
-    fmt.Println(v)
+	v := xstruct.Retpriv()
+	fmt.Println(v)
 }

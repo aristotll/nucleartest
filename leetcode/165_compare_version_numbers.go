@@ -65,18 +65,18 @@ func compareTwoPoint(v1, v2 string) int {
 	//vv1, vv2 := 0, 0
 
 	for p1 < max || p2 < max {
-        vv1, vv2 := 0, 0
+		vv1, vv2 := 0, 0
 
-        // 使用 while 来循环读取一个小版本号（例如 1.111 中的 1 和 111 就是小版本号），
-        // 遇到 . 停止，此时 vv1, vv2 的值即是小版本号，vv1 和 vv2 定义在外层 for 内，
-        // 每次比较后都会清零
+		// 使用 while 来循环读取一个小版本号（例如 1.111 中的 1 和 111 就是小版本号），
+		// 遇到 . 停止，此时 vv1, vv2 的值即是小版本号，vv1 和 vv2 定义在外层 for 内，
+		// 每次比较后都会清零
 		for p1 < l1 && v1[p1] != '.' {
 			vv1 = vv1*10 + int(v1[p1]) - '0'
-            p1++
+			p1++
 		}
 		for p2 < l2 && v2[p2] != '.' {
 			vv2 = vv2*10 + int(v2[p2]) - '0'
-            p2++
+			p2++
 		}
 		//fmt.Printf("vv1: %d vv2: %d\n", vv1, vv2)
 		if vv1 > vv2 {

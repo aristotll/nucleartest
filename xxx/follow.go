@@ -72,7 +72,7 @@ func gotit() *FollowResponse {
 	} else {
 		fmt.Printf("total %v, got %v, some is wrong\n", totalNumber, gotNumber)
 	}
-	
+
 	return nil
 }
 

@@ -15,5 +15,5 @@ func fn(x, y int64) s {
 func main() {
 	v := fn(1, 2)
 	fmt.Println(&v)
-	
+
 }

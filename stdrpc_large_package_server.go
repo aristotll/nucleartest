@@ -1,10 +1,10 @@
 package main
 
 import (
+	"log"
 	"net"
 	"net/rpc"
 	"strings"
-	"log"
 )
 
 type Server struct{}

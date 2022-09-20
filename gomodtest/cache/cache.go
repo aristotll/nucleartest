@@ -13,7 +13,7 @@ var cache = map[string]string{
 	"c": "3",
 }
 
-type GetData struct {}
+type GetData struct{}
 
 func (g *GetData) Get(ctx context.Context, key string, dest groupcache.Sink) error {
 	v, ok := cache[key]

@@ -7,8 +7,8 @@ import (
 type size int64
 
 const (
-	b = iota
-	kb size = 1 << (10*iota)
+	b       = iota
+	kb size = 1 << (10 * iota)
 	mb
 	gb
 )

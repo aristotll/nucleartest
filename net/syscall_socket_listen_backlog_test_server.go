@@ -1,13 +1,13 @@
 package main
 
 import (
-    "log"
-    "syscall"
-    "time"
+	"log"
+	"syscall"
+	"time"
 )
 
 func main() {
-    fd, err := syscall.Socket(syscall.AF_INET, syscall.SOCK_STREAM, 0)
+	fd, err := syscall.Socket(syscall.AF_INET, syscall.SOCK_STREAM, 0)
 	if err != nil {
 		log.Fatalln(err)
 	}
@@ -23,9 +23,9 @@ func main() {
 		log.Fatalln(err)
 	}
 
-    log.Println("开始睡眠")
-    time.Sleep(time.Second * 60)
-    log.Println("睡眠结束")
+	log.Println("开始睡眠")
+	time.Sleep(time.Second * 60)
+	log.Println("睡眠结束")
 
 	for {
 		connfd, _, err := syscall.Accept(fd)

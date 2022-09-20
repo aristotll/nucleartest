@@ -1,8 +1,8 @@
 package main
 
 import (
-	"gomodtest/sockchan/global"
 	"fmt"
+	"gomodtest/sockchan/global"
 )
 
 func main() {

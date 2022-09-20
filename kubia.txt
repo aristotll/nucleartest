@@ -1,0 +1,1 @@
+user=admin&passwd=12345678

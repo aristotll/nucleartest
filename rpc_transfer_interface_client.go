@@ -1,9 +1,9 @@
 package main
 
 import (
-	"net/rpc"
-	"fmt"
 	"encoding/gob"
+	"fmt"
+	"net/rpc"
 )
 
 type Interface interface {
@@ -11,31 +11,30 @@ type Interface interface {
 }
 
 type (
-	Args struct {X Interface}
-	Reply struct {Y Interface}
+	Args  struct{ X Interface }
+	Reply struct{ Y Interface }
 )
 
-type A struct {Name string}
+type A struct{ Name string }
 
 // 实现Interface 接口
 func (a *A) XX() {}
 
-type B struct {Age string}
+type B struct{ Age string }
 
 func (b *B) XX() {}
 
 func main() {
 	gob.Register(&A{})
-	gob.Register(&B{})	
+	gob.Register(&B{})
 
 	c, err := rpc.Dial("tcp", ":7070")
 	if err != nil {
 		panic(err)
 	}
 
-
 	var (
-		args = &Args{X: &A{"wang"}}
+		args  = &Args{X: &A{"wang"}}
 		reply = &Reply{}
 	)
 

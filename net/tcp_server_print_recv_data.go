@@ -1,15 +1,15 @@
 package main
 
 import (
-	"net"
 	"log"
+	"net"
 )
 
 func main() {
 	addr := ":8080"
 	l, err := net.Listen("tcp", addr)
 	if err != nil {
-		log.Fatalln("listen error: ", err)	
+		log.Fatalln("listen error: ", err)
 	}
 	log.Printf("listen in %v \n", addr)
 

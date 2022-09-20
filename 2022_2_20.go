@@ -11,11 +11,11 @@ func fn(n int) float64 {
 	fmt.Printf("%.6f\n", p)
 	f, _ := strconv.ParseFloat(fmt.Sprintf("%.6f", p), 64)
 	fmt.Println("f: ", f)
-    return float64(n) * p
+	return float64(n) * p
 }
 
 func main() {
-    var n int
-    fmt.Scan(&n)
-    fmt.Println(fn(n))
+	var n int
+	fmt.Scan(&n)
+	fmt.Println(fn(n))
 }

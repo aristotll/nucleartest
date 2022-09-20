@@ -15,7 +15,7 @@ func go1(ctx context.Context) {
 	go go2(ctx1)
 }
 
-func go2(ctx context.Context)  {
+func go2(ctx context.Context) {
 	key := "name"
 	val := ctx.Value(key)
 	fmt.Printf("go2 get val: %v\n", val)

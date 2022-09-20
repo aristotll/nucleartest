@@ -1,17 +1,17 @@
 package main
 
 import (
-	"net/rpc"
 	"log"
+	"net/rpc"
 )
 
 type Request struct {
-      A, B, C, D, E, F, G string
-  }
+	A, B, C, D, E, F, G string
+}
 
-  type Response struct {
-      Str string
- }
+type Response struct {
+	Str string
+}
 
 func main() {
 	conn, err := rpc.Dial("tcp", ":9999")

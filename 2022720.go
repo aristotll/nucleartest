@@ -11,19 +11,19 @@ type Interface interface {
 type S struct{}
 
 func (s *S) xxx() {}
-func (s *S) yyy() {fmt.Println("S.yyy")}
+func (s *S) yyy() { fmt.Println("S.yyy") }
 
-type SS struct {}
+type SS struct{}
 
 func (s *SS) xxx() {}
-func (s *SS) zzz(){ fmt.Println("SS.zzz") }
+func (s *SS) zzz() { fmt.Println("SS.zzz") }
 
 func fn(i Interface) {
 	switch i.(type) {
 	case *S:
 		i.(*S).yyy()
 	case *SS:
-		i.(*SS).zzz()	
+		i.(*SS).zzz()
 	}
 }
 
@@ -31,4 +31,3 @@ func main() {
 	fn(&S{})
 	fn(&SS{})
 }
-

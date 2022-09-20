@@ -1,8 +1,6 @@
 package main
 
-import (
-	
-)
+import ()
 
 func maxArea(height []int) int {
 	i := 0

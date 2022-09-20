@@ -5,10 +5,10 @@ import (
 	"reflect"
 )
 
-type Struct struct {}
+type Struct struct{}
 
-func (s *Struct) X() {}
-func (s *Struct) Y(x, y int) error{return nil}
+func (s *Struct) X()               {}
+func (s *Struct) Y(x, y int) error { return nil }
 
 func main() {
 	typ := reflect.TypeOf(new(Struct))

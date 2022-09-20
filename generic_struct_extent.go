@@ -16,7 +16,5 @@ type B struct {
 
 func main() {
 	var b B
-	
+
 }
-
-

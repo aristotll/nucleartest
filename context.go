@@ -1,17 +1,17 @@
 package main
 
 import (
-    "fmt"
-    "context"
-    "time"
+	"context"
+	"fmt"
+	"time"
 )
 
 func main() {
-    _, cancel := context.WithTimeout(context.Background(), time.Second*3)
-    defer cancel()
+	_, cancel := context.WithTimeout(context.Background(), time.Second*3)
+	defer cancel()
 
-    for {
-        fmt.Println("123")
-        time.Sleep(time.Second)
-    }
+	for {
+		fmt.Println("123")
+		time.Sleep(time.Second)
+	}
 }

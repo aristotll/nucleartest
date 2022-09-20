@@ -42,7 +42,7 @@ func removeDuplicate1(array []int) []int {
 func main() {
 	//ret := removeDuplicate([]int{3, 5, 8, 2, 3, 8})
 	//fmt.Println(ret)
-	
+
 	ret1 := removeDuplicate1([]int{3, 5, 8, 2, 3, 8})
 	fmt.Println(ret1)
 }

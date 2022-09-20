@@ -10,7 +10,6 @@ type (
 	Color3 int32
 )
 
-
 type Color struct {
 	Color1
 	Color2

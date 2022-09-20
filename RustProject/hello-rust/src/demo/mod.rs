@@ -2,6 +2,7 @@ pub mod hashmap;
 pub mod lifetime;
 pub mod method;
 pub mod move_test;
+pub mod net;
 pub mod option;
 pub mod ptr;
 pub mod result;

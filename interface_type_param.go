@@ -11,7 +11,7 @@ type it interface {
 
 type aaa struct {
 	name string
-	age int
+	age  int
 }
 
 func NewAaa(name string, age int) *aaa {

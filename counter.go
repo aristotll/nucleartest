@@ -22,7 +22,6 @@ func (c *Counter) GetAndIncreaseSafe() int64 {
 	return c.Val
 }
 
-
 func main() {
 	var wg sync.WaitGroup
 	c := &Counter{}

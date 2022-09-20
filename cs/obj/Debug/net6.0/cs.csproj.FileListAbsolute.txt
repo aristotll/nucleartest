@@ -1,0 +1,15 @@
+/Users/zenghao/pj/justtest/cs/bin/Debug/net6.0/cs
+/Users/zenghao/pj/justtest/cs/bin/Debug/net6.0/cs.deps.json
+/Users/zenghao/pj/justtest/cs/bin/Debug/net6.0/cs.runtimeconfig.json
+/Users/zenghao/pj/justtest/cs/bin/Debug/net6.0/cs.dll
+/Users/zenghao/pj/justtest/cs/bin/Debug/net6.0/cs.pdb
+/Users/zenghao/pj/justtest/cs/obj/Debug/net6.0/cs.csproj.AssemblyReference.cache
+/Users/zenghao/pj/justtest/cs/obj/Debug/net6.0/cs.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zenghao/pj/justtest/cs/obj/Debug/net6.0/cs.AssemblyInfoInputs.cache
+/Users/zenghao/pj/justtest/cs/obj/Debug/net6.0/cs.AssemblyInfo.cs
+/Users/zenghao/pj/justtest/cs/obj/Debug/net6.0/cs.csproj.CoreCompileInputs.cache
+/Users/zenghao/pj/justtest/cs/obj/Debug/net6.0/cs.dll
+/Users/zenghao/pj/justtest/cs/obj/Debug/net6.0/refint/cs.dll
+/Users/zenghao/pj/justtest/cs/obj/Debug/net6.0/cs.pdb
+/Users/zenghao/pj/justtest/cs/obj/Debug/net6.0/cs.genruntimeconfig.cache
+/Users/zenghao/pj/justtest/cs/obj/Debug/net6.0/ref/cs.dll

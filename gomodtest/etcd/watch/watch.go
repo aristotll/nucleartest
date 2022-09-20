@@ -37,7 +37,7 @@ func main() {
 						log.Printf(
 							"[update event]: key=%v, val=%v\n",
 							string(event.Kv.Key), string(event.Kv.Value))
-							fmt.Printf("event.PrevKv: %v\n", event.PrevKv)
+						fmt.Printf("event.PrevKv: %v\n", event.PrevKv)
 					}
 				case clientv3.EventTypeDelete:
 					log.Printf("[delete event]: key=%v\n", string(event.Kv.Key))

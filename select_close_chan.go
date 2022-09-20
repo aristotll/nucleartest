@@ -10,18 +10,22 @@ func fn(x, y chan int) {
 	go func() {
 		for {
 			select {
-			case _, ok := <- x:
-				if !ok {x = nil}
+			case _, ok := <-x:
+				if !ok {
+					x = nil
+				}
 				fmt.Println("x")
-			case _, ok := <- y:
-				if !ok {y = nil}
+			case _, ok := <-y:
+				if !ok {
+					y = nil
+				}
 				fmt.Println("y")
 			default:
 				fmt.Println("default")
-				done <- struct{}{}		
+				done <- struct{}{}
 			}
 		}
-	}()	
+	}()
 }
 
 func main() {

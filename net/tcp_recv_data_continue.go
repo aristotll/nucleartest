@@ -1,8 +1,8 @@
 package main
 
 import (
-	"net"
 	"log"
+	"net"
 	"time"
 )
 
@@ -10,7 +10,7 @@ func main() {
 	addr := ":8080"
 	conn, err := net.Dial("tcp", addr)
 	if err != nil {
-		log.Fatalln("dial error: ", err)	
+		log.Fatalln("dial error: ", err)
 	}
 
 	b := make([]byte, 4096)

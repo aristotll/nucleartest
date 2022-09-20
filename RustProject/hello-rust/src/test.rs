@@ -51,4 +51,11 @@ mod test {
     fn issue() {
         issuenote::issue_note_temporary_var::__main__();
     }
+
+    #[test]
+    // test --package hello-rust --bin hello-rust test::test::net -- --exact --nocapture
+    // --nocapture 打印输出
+    fn net() {
+        demo::net::start_tcp_server();
+    }
 }

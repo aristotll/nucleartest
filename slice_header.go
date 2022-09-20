@@ -1,9 +1,9 @@
 package main
 
 import (
+	"fmt"
 	"reflect"
 	"unsafe"
-	"fmt"
 )
 
 func getSliceHeader(slice []int) {
@@ -13,7 +13,7 @@ func getSliceHeader(slice []int) {
 
 	dataPtr := unsafe.Pointer(struc.Data)
 	fmt.Println(dataPtr)
-	
+
 	//data := *(*[3]int)(dataPtr)
 	//fmt.Println(data)
 }

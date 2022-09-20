@@ -1,14 +1,14 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 func main() {
-    var r *int64
-    {
-        var x int64 = 5
-        r = &x 
-    }
-    fmt.Println(*r)
+	var r *int64
+	{
+		var x int64 = 5
+		r = &x
+	}
+	fmt.Println(*r)
 }

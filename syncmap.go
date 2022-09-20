@@ -2,16 +2,16 @@ package main
 
 import (
 	"fmt"
-	"sync/atomic"
 	"sync"
+	"sync/atomic"
 )
 
 var id int64
 var wg sync.WaitGroup
 var m sync.Map
 
-type A struct {id int64}
-type B struct {id int64}
+type A struct{ id int64 }
+type B struct{ id int64 }
 
 func NewA() *A {
 	return &A{id: atomic.AddInt64(&id, 1)}
@@ -30,7 +30,7 @@ func main() {
 			fmt.Println(NewA().id)
 			if _, loaded := m.LoadOrStore(NewA().id, nil); loaded {
 				panic("id 重复！")
-			}	
+			}
 		}()
 
 		go func() {

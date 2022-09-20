@@ -30,5 +30,5 @@ func main() {
 	}
 	go startServer()
 	request()
-	select{}
+	select {}
 }

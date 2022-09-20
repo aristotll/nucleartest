@@ -1,28 +1,27 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 type P interface {
-    Work()
+	Work()
 }
 
 type PA struct {
-    
 }
 
 func (p *PA) Work() {
-    fmt.Println("pa word!")
+	fmt.Println("pa word!")
 }
 
 type A struct {
-    P
+	P
 }
 
 func main() {
-    a := &A{
-        P: &PA{},
-    }
-    a.Work()
+	a := &A{
+		P: &PA{},
+	}
+	a.Work()
 }

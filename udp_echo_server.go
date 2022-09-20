@@ -25,7 +25,7 @@ func main() {
 			continue
 		}
 		log.Printf("read from addr: %+v, n: %v \n", addr, n)
-		
+
 		_, err = l.WriteToUDP(b, addr)
 		if err != nil {
 			log.Println(err)

@@ -4,6 +4,22 @@ import (
 	"fmt"
 )
 
+type A interface {
+	ADO()
+}
+
+type B interface {
+	A
+	BDO()
+}
+
+type S struct{}
+
+func (s *S) BDO() {}
+func (s *S) ADO() {}
+
+var _ = (B)(&S{})
+
 type inter interface {
 	Do(inter) string
 }
@@ -13,7 +29,7 @@ type stc struct {
 }
 
 func (*stc) Do(s *stc) string {
-	return  s.str
+	return s.str
 }
 
 func main() {
@@ -22,5 +38,3 @@ func main() {
 	ret := s1.Do(ss)
 	fmt.Println(ret)
 }
-
-

@@ -21,10 +21,10 @@ func tslice() []TT {
 	a[0] = 1
 
 	a1 := make([]int, 4096) // make([]int, 4096) does not escape
-    a1[0] = 1
+	a1[0] = 1
 
-    a2 := make([]int, 10000) // make([]int, 10000) escapes to heap
-    a2[0] = 1
+	a2 := make([]int, 10000) // make([]int, 10000) escapes to heap
+	a2[0] = 1
 
 	return nn
 }

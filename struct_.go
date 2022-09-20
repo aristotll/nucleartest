@@ -1,9 +1,9 @@
 package main
 
 import (
+	"fmt"
 	"reflect"
 	"unsafe"
-	"fmt"
 )
 
 func getSliceHeader(slice []int) {

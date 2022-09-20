@@ -6,11 +6,12 @@ import (
 	"unicode"
 )
 
-
 func main() {
 	unicode.IsDigit('1')
 	unicode.IsSpace(' ')
-	if false {fmt.Println("123")}
+	if false {
+		fmt.Println("123")
+	}
 
 	s := "    "
 	fmt.Println(s == "")

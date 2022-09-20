@@ -11,5 +11,3 @@ type A interface {
 func (a A) DoWhat() {
 	a.Do()
 }
-
-

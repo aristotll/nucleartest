@@ -1,11 +1,11 @@
 package main
 
 import (
-   // "fmt"
-    "os"
-    "io"
+	// "fmt"
+	"io"
+	"os"
 )
 
 func main() {
-    io.Copy(os.Stdout, os.Stdin)
+	io.Copy(os.Stdout, os.Stdin)
 }

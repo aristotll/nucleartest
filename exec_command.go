@@ -1,8 +1,8 @@
 package main
 
 import (
-	"os/exec"
 	"log"
+	"os/exec"
 )
 
 func main() {

@@ -5,48 +5,42 @@ import (
 )
 
 type MyStack struct {
-    queue *list.List
+	queue *list.List
 }
-
 
 /** Initialize your data structure here. */
 func Constructor() MyStack {
-    return MyStack{
-        queue: list.New(),
-    }
+	return MyStack{
+		queue: list.New(),
+	}
 }
-
 
 /** Push element x onto stack. */
-func (m *MyStack) Push(x int)  {
-    queueLen := m.queue.Len()
-    m.queue.PushBack(x)
+func (m *MyStack) Push(x int) {
+	queueLen := m.queue.Len()
+	m.queue.PushBack(x)
 
-    for i := 0; i < queueLen; i++ {
-        pop := m.queue.Remove(m.queue.Front()).(int)
-        m.queue.PushBack(pop)
-    }
+	for i := 0; i < queueLen; i++ {
+		pop := m.queue.Remove(m.queue.Front()).(int)
+		m.queue.PushBack(pop)
+	}
 }
-
 
 /** Removes the element on top of the stack and returns that element. */
 func (m *MyStack) Pop() int {
-    pop := m.queue.Remove(m.queue.Front()).(int) 
-    return pop
+	pop := m.queue.Remove(m.queue.Front()).(int)
+	return pop
 }
-
 
 /** Get the top element. */
 func (m *MyStack) Top() int {
-    return m.queue.Front().Value.(int)
+	return m.queue.Front().Value.(int)
 }
-
 
 /** Returns whether the stack is empty. */
 func (m *MyStack) Empty() bool {
-    return m.queue.Len() == 0
+	return m.queue.Len() == 0
 }
-
 
 /**
  * Your MyStack object will be instantiated and called as such:

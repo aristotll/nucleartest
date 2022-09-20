@@ -29,7 +29,7 @@ func main() {
 
 	ss33 := slices.Insert(s3, 1, 5)
 	fmt.Println(ss33)
-	
+
 	slices.Sort(ss33)
 	fmt.Println(ss33)
 }

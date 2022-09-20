@@ -17,7 +17,7 @@ func check(n []int) bool {
 		if index == -1 || v-1 == index {
 			index = v
 			continue
-		} 
+		}
 		//if v-1 == index {
 		//	index = v
 		//	continue
@@ -26,5 +26,3 @@ func check(n []int) bool {
 	}
 	return true
 }
-
-

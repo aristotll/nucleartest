@@ -31,14 +31,14 @@ func main() {
 	}
 	wg.Wait()
 
-// test:
-// $ while true;do nc localhost 8080;done;
-// accept 7
-// accept 1
-// accept 0
-// accept 4
-// accept 5
-// accept 6
-// accept 3
-// accept 2
+	// test:
+	// $ while true;do nc localhost 8080;done;
+	// accept 7
+	// accept 1
+	// accept 0
+	// accept 4
+	// accept 5
+	// accept 6
+	// accept 3
+	// accept 2
 }

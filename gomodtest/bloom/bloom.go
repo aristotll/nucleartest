@@ -2,8 +2,8 @@ package bloom
 
 import (
 	"fmt"
-	"github.com/quasoft/bloomflt"
 	"github.com/bits-and-blooms/bloom/v3"
+	"github.com/quasoft/bloomflt"
 	"strconv"
 )
 

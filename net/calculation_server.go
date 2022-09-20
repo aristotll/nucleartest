@@ -36,9 +36,9 @@ func main() {
 
 				// 输入 q 退出
 				if buf[0] == 'q' || buf[0] == 'Q' {
-				   conn.Write([]byte("^^ bye ^^"))
-				   conn.Close()
-				   break
+					conn.Write([]byte("^^ bye ^^"))
+					conn.Close()
+					break
 				}
 
 				op, num, err := ParseProtocol(buf)
@@ -60,7 +60,6 @@ func main() {
 			}
 		}()
 
-
 	}
 }
 
@@ -69,7 +68,7 @@ func ParseProtocol(msg []byte) (op byte, num []int, err error) {
 	if len(msg) == 0 {
 		return ' ', nil, errors.New("protocol info error")
 	}
-	count := int(msg[0]-'0') // 运算数个数
+	count := int(msg[0] - '0') // 运算数个数
 
 	// 读取运算数，+1 跳过[0]
 	for i := 0; i < count; i++ {

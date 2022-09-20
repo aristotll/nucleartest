@@ -1,22 +1,22 @@
 package main
 
 import (
-    "fmt"
-    "time"
+	"fmt"
+	"time"
 )
 
 func main() {
-    c := make(chan struct{})
-    
-    select {
-    case <-c:
-        fmt.Println("ok")
-    }
+	c := make(chan struct{})
 
-    //go func() {
-    //    <-c
-    //    fmt.Println("ok")
-    //}()
+	select {
+	case <-c:
+		fmt.Println("ok")
+	}
 
-    time.Sleep(time.Second * 3)
+	//go func() {
+	//    <-c
+	//    fmt.Println("ok")
+	//}()
+
+	time.Sleep(time.Second * 3)
 }

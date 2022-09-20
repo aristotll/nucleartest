@@ -2,7 +2,8 @@ package main
 
 import (
 	. "constraints"
-   	"fmt"
+	"fmt"
+	"net"
 )
 
 func Max[T Ordered](x, y T) T {
@@ -15,4 +16,5 @@ func Max[T Ordered](x, y T) T {
 func main() {
 	m := Max(1, 2)
 	fmt.Println(m)
+	net.SplitHostPort()
 }

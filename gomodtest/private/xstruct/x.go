@@ -1,10 +1,10 @@
 package xstruct
 
-type private struct{
-    x string
-    Y string
+type private struct {
+	x string
+	Y string
 }
 
 func Retpriv() *private {
-    return &private{"123", "456"}
+	return &private{"123", "456"}
 }

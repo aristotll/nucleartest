@@ -1,8 +1,8 @@
 package main
 
 import (
-	"sync"
 	"fmt"
+	"sync"
 )
 
 type Struct struct {
@@ -13,7 +13,7 @@ func main() {
 	var wg sync.WaitGroup
 	p := &sync.Pool{
 		New: func() interface{} {
-				return &Struct{name: "zhang3"}
+			return &Struct{name: "zhang3"}
 		},
 	}
 

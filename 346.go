@@ -1,16 +1,16 @@
 package main
 
 import (
-    "strings"
-    "fmt"
-    "unicode"
+	"fmt"
+	"strings"
+	"unicode"
 )
 
 func main() {
-    s := "my name is a, and her name is b."
-    ff := func(r rune) bool {return !unicode.IsLetter(r)}
+	s := "my name is a, and her name is b."
+	ff := func(r rune) bool { return !unicode.IsLetter(r) }
 
-    word := strings.FieldsFunc(s, ff)
+	word := strings.FieldsFunc(s, ff)
 
-    fmt.Println(word)
+	fmt.Println(word)
 }

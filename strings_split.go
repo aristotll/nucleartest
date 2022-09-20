@@ -11,7 +11,7 @@ func main() {
 
 	for index, val := range ss {
 		fmt.Printf("[%v] -> %v \n", index+1, val)
-	} 
+	}
 	//fmt.Println(ss)
 
 	s = "localhost:8080"

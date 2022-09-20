@@ -10,7 +10,7 @@ import (
 func main() {
 	code := "nfjvvphbbadd"
 	username := "@qq.com"
-	
+
 	e := email.NewEmail()
 	e.From = username
 	e.To = []string{"zh1105336755@gmail.com"}

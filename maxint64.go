@@ -1,11 +1,11 @@
 package main
 
 import (
-    "math"
-    "fmt"
+	"fmt"
+	"math"
 )
 
 func main() {
-    fmt.Println(math.MaxInt64)
-    fmt.Println(math.MaxInt32)
+	fmt.Println(math.MaxInt64)
+	fmt.Println(math.MaxInt32)
 }

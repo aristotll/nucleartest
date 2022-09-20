@@ -10,9 +10,9 @@ type Struct struct {
 
 func main() {
 	//type Struct struct {X int64}
-	list := []*Struct{{1}, {2}, {3}}	
+	list := []*Struct{{1}, {2}, {3}}
 	cp := make([]*Struct, len(list))
-	
+
 	for k, v := range list {
 		cp[k] = v
 	}

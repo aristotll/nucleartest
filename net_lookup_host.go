@@ -1,9 +1,9 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"net"
-	"flag"
 )
 
 var url = flag.String("u", "", "input a url")

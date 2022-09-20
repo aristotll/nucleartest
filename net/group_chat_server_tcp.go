@@ -38,7 +38,7 @@ func ServerConn(conn net.Conn) {
 			break
 		}
 		for _, c := range conns {
-			if c == conn {	// 不需要给自己发
+			if c == conn { // 不需要给自己发
 				continue
 			}
 			// 写入格式：[ip]消息

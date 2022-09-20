@@ -11,7 +11,7 @@ func print123() {
 		ch1 = make(chan struct{})
 		ch2 = make(chan struct{})
 		ch3 = make(chan struct{})
-		wg sync.WaitGroup
+		wg  sync.WaitGroup
 	)
 
 	wg.Add(3)

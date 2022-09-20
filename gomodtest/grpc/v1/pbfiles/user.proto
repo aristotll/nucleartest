@@ -1,0 +1,22 @@
+syntax = "proto3";
+package pb;
+
+import "models.proto";
+
+message UserScoreRequest {
+  repeated UserScore userScore = 1;
+}
+
+message UserScoreResponse {
+  repeated UserScore userScore = 1;
+}
+
+service UserScoreService {
+  rpc GetUserScore(UserScoreRequest) returns (UserScoreResponse);
+  // 服务端流模式，分批返回数据
+  rpc GetUserScoreByServerStream(UserScoreRequest) returns (stream UserScoreResponse);
+  // 客户端流模式，分批发送数据
+  rpc GetUserScoreByClientStream(stream UserScoreRequest) returns (UserScoreResponse);
+  // 双向流
+  rpc GetUserScoreByTwoWayStream(stream UserScoreRequest) returns (stream UserScoreResponse);
+}

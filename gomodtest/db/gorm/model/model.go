@@ -26,7 +26,7 @@ type User struct {
 	gorm.Model
 	Username string
 	Address  string
-	Ord []Order	`gorm:"foreignKey:UserId"`
+	Ord      []Order `gorm:"foreignKey:UserId"`
 }
 
 type Order struct {

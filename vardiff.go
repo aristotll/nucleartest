@@ -6,7 +6,7 @@ import (
 
 type stu struct {
 	name string
-	age int
+	age  int
 }
 
 func (s *stu) print() {

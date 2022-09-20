@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"syscall"
 	. "syscall"
 	"testing"
 	"time"
@@ -14,7 +15,7 @@ import (
 
 const defaultMmapPageSize = 1024
 
-// 该进程负载写入
+// 该进程负责写入
 func TestWrite(t *testing.T) {
 	fmt.Printf("process id=%v, this process will write data\n", os.Getpid())
 	f, err := os.OpenFile("./mmap.txt", os.O_RDWR, 0777)
@@ -53,15 +54,11 @@ func TestRead(t *testing.T) {
 	}
 }
 
+// 匿名 mmap
 func TestAnonymousMmap(t *testing.T) {
 	data, err := Mmap(-1, 0, defaultMmapPageSize, PROT_READ|PROT_WRITE, MAP_SHARED|MAP_ANON)
 	if err != nil {
 		t.Fatal(err)
 	}
-
-	ret1, ret2, err := Syscall(SYS_FORK, 0, 0, 0)
-	if err != nil {
-		t.Fatal(err)
-	}
-	
+	_ = data
 }

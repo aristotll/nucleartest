@@ -21,12 +21,10 @@ func (c canSort) Less(i, j int) bool {
 
 type stu1 struct {
 	name string
-	age int8
+	age  int8
 }
 
 type ss []*stu1
-
-
 
 func main() {
 	var c canSort

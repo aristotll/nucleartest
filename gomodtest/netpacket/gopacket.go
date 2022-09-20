@@ -91,8 +91,8 @@ func SendRST(seq uint32) {
 	tcpLayer := &layers.TCP{
 		SrcPort: layers.TCPPort(4321),
 		DstPort: layers.TCPPort(8080),
-		RST: true,
-		Seq: seq,
+		RST:     true,
+		Seq:     seq,
 	}
 	if err := tcpLayer.SetNetworkLayerForChecksum(ipLayer); err != nil {
 		log.Fatalln(err)

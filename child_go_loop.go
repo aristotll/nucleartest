@@ -1,8 +1,8 @@
 package main
 
 import (
-	"time"
 	"fmt"
+	"time"
 )
 
 func main() {
@@ -10,7 +10,7 @@ func main() {
 		for {
 			fmt.Println("loop...")
 			time.Sleep(time.Second)
-		}	
+		}
 	}()
 
 	fmt.Println("main run...")

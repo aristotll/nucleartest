@@ -19,4 +19,3 @@ func CallPrivateFunc() {
 func CallPrivateFunc1() {
 	callPrivateFunc1("li4", 18)
 }
-

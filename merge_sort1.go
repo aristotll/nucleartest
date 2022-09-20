@@ -40,7 +40,7 @@ func sort(n []int) []int {
 	fmt.Printf("before: %v %v ", l, r)
 	merge(l, r)
 	fmt.Printf("after: %v %v \n", l, r)
-	
+
 	return n
 }
 

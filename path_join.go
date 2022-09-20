@@ -1,8 +1,8 @@
 package main
 
 import (
-	"path"
 	"fmt"
+	"path"
 )
 
 func main() {

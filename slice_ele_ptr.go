@@ -17,5 +17,5 @@ func main() {
 	n2 := ss[0]
 	n2 = 1
 	_ = n2
-	fmt.Println(ss) 
+	fmt.Println(ss)
 }

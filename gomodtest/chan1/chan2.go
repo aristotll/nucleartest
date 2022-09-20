@@ -6,6 +6,6 @@ import (
 )
 
 func Recv() {
-	v := <- Ch
+	v := <-Ch
 	fmt.Println("[chan2] receive data: ", v)
 }

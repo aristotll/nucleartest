@@ -18,4 +18,3 @@ func main() {
 	fmt.Println("ss: ", ss)
 	fmt.Println("s: ", s)
 }
-	

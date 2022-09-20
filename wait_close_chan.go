@@ -23,5 +23,5 @@ func main() {
 		close(c) // 2 秒后关闭 c，看 <-c 处会发生什么
 	}()
 	wg.Wait()
-	
+
 }

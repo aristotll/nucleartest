@@ -1,8 +1,8 @@
 package main
 
 import (
-	"sync"
 	"fmt"
+	"sync"
 )
 
 type Struct struct {
@@ -15,7 +15,7 @@ func (s *Struct) fn() {
 			fmt.Println(1)
 		})
 	}
-	
+
 }
 
 func (s *Struct) fn1() {

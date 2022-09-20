@@ -9,7 +9,7 @@ import (
 func main() {
 	s := "xiaoming is a good student"
 	s1 := "123 456 789"
-	
+
 	// for _, c := range s {
 	// 	b := unicode.IsLetter(c)
 	// 	fmt.Printf("%v: %v\n", string(c), b)

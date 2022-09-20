@@ -15,7 +15,7 @@ type Response struct {
 	Result string
 }
 
-type Server struct {}
+type Server struct{}
 
 func (s *Server) Backup(req *Request, resp *Response) error {
 	cmd := req.Command

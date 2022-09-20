@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-type People struct {}
+type People struct{}
 
 func (p *People) A() {
 	fmt.Println("people A")

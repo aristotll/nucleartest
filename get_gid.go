@@ -1,10 +1,10 @@
 package main
 
 import (
-    "fmt"
-    "runtime"
-    "strings"
-    "strconv"
+	"fmt"
+	"runtime"
+	"strconv"
+	"strings"
 )
 
 func goID() int {
@@ -19,14 +19,14 @@ func goID() int {
 }
 
 func main() {
-    for i := 0; i < 100; i++ {
-        go func(i int) {
-           fmt.Printf("go %d ID: %d \n", i, goID())    
-        }(i)
-    }
+	for i := 0; i < 100; i++ {
+		go func(i int) {
+			fmt.Printf("go %d ID: %d \n", i, goID())
+		}(i)
+	}
 
-    g := goID()
-    fmt.Println(g)
+	g := goID()
+	fmt.Println(g)
 
-    select{}
+	select {}
 }

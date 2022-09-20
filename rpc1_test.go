@@ -9,7 +9,7 @@ import (
 
 type Ss struct {
 	X, Y int64
-	Str string
+	Str  string
 }
 
 func (s *Ss) Add(param *Param, res *Res) error {
@@ -18,9 +18,8 @@ func (s *Ss) Add(param *Param, res *Res) error {
 	return nil
 }
 
-
 type Param struct {
-	Str string
+	Str  string
 	X, Y int64
 }
 
@@ -33,7 +32,7 @@ type Res struct {
 // 结论：可以
 type ParamDif struct {
 	X, Y int64
-	Str string
+	Str  string
 }
 
 // 少了一个字段，能否调用成功？
@@ -51,9 +50,9 @@ type ParamDif2 struct {
 // 多一个字段
 // 结论：成功
 type ParamDif3 struct {
-	Str string
+	Str  string
 	X, Y int64
-	III float64
+	III  float64
 }
 
 func TestServer1(t *testing.T) {

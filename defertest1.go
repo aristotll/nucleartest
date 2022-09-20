@@ -1,17 +1,17 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 func returnButDefer() (t int) {
-    defer func() {
-        t = t * 10
-    }()
+	defer func() {
+		t = t * 10
+	}()
 
-    return 1
+	return 1
 }
 
 func main() {
-    fmt.Println(returnButDefer())
+	fmt.Println(returnButDefer())
 }

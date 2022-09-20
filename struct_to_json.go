@@ -17,7 +17,7 @@ func main() {
 	s := &st{
 		A: 100,
 		B: "abc",
-		C: struct{Name string}{"zhang3"},
+		C: struct{ Name string }{"zhang3"},
 	}
 
 	b, err := json.Marshal(&s)

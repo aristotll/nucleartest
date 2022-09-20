@@ -2,15 +2,15 @@ package main
 
 import (
 	//"runtime"
-	"sync"
 	"fmt"
+	"sync"
 )
 
 func main() {
 	var wg sync.WaitGroup
 	wg.Add(1)
 
-	go func () {
+	go func() {
 		defer wg.Done()
 		var i int64
 		for {
@@ -21,7 +21,7 @@ func main() {
 			}
 			fmt.Printf("i: %d \n", i)
 		}
-		
+
 	}()
 
 	wg.Wait()

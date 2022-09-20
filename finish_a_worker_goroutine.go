@@ -9,4 +9,3 @@ func work(ctx context.Context) {
 func main() {
 
 }
-

@@ -1,21 +1,24 @@
 package main
+
 import (
-    "fmt"
+	"fmt"
 )
+
 type A struct {
-    s string
+	s string
 }
+
 func main() {
-    var a *A
-    if check(a) {
-        a, err := generate()
-        fmt.Println(a.s, err)
-    }
-    fmt.Println(a.s)
+	var a *A
+	if check(a) {
+		a, err := generate()
+		fmt.Println(a.s, err)
+	}
+	fmt.Println(a.s)
 }
 func generate() (*A, error) {
-    return &A{s: "b"}, nil
+	return &A{s: "b"}, nil
 }
 func check(a *A) bool {
-    return true
+	return true
 }

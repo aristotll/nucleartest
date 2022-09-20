@@ -29,7 +29,7 @@ func HandlerResponse(url string) {
 		r := <-HTTPGet(url)
 		fmt.Println("[HandlerResponse] get the resp from HttpGet")
 		fmt.Println("resp: ", string(r))
-		fmt.Println("[HandlerResponse] handler resp done!");
+		fmt.Println("[HandlerResponse] handler resp done!")
 	}()
 }
 
@@ -48,7 +48,7 @@ func main() {
 	// Output:
 	// [otherWork] do some thing....
 	// [HttpGet] http get1 start
-	// [HttpGet] http get www.baidu.com done! 
+	// [HttpGet] http get www.baidu.com done!
 	// [HttpGet] http get end
 	// [HandlerResponse] get the resp from HttpGet
 	// resp:  abc

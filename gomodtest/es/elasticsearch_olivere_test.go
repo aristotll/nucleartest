@@ -204,7 +204,7 @@ func TestSearchHighlight(t *testing.T) {
 	h = h.Fields(elastic.NewHighlighterField("about")).
 		PreTags("<span style='color: red;'>").
 		PostTags("</span>")
-	
+
 	indexName := "megacorp"
 
 	r, err := SearchHighlight(context.Background(), EsClientOlivere, mq, h, indexName)

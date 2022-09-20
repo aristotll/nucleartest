@@ -2,9 +2,9 @@ package main
 
 import (
 	"gopkg.in/yaml.v2"
+	"io/ioutil"
 	"log"
 	"os"
-	"io/ioutil"
 )
 
 type Struct struct {

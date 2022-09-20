@@ -10,5 +10,3 @@ func main() {
 	s2 := strings.Split(s, ":")
 	fmt.Printf("s2: %v\n", s2)
 }
-
-

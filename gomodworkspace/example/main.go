@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	mypkg.Bar()	
+	mypkg.Bar()
 }

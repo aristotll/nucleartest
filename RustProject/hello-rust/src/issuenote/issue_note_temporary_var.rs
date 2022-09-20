@@ -6,6 +6,7 @@ struct User {
     age: i8,
 }
 
+/*
 fn __error3__() {
     let u;
     let str1 = String::from("li");
@@ -14,6 +15,7 @@ fn __error3__() {
     println!("{:#?}", u);
     //                - borrow later used here
 }
+*/
 
 fn __true3__() {
     let u: &User;

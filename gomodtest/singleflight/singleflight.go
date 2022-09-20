@@ -2,9 +2,9 @@ package main
 
 import (
 	"errors"
+	"golang.org/x/sync/singleflight"
 	"log"
 	"sync"
-	"golang.org/x/sync/singleflight"
 )
 
 var errorNotExist = errors.New("not exist")

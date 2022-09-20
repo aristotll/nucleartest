@@ -12,7 +12,7 @@ func main() {
 	ii = append(ii, 5)
 	fmt.Println(i, ii)
 
-	s := AAA{A:123}
+	s := AAA{A: 123}
 	ss := s
 	ss.A = 456
 	fmt.Println(s, ss)

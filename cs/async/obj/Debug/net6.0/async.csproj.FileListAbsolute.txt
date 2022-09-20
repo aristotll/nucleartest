@@ -1,0 +1,15 @@
+/Users/zenghao/pj/justtest/cs/async/bin/Debug/net6.0/async
+/Users/zenghao/pj/justtest/cs/async/bin/Debug/net6.0/async.deps.json
+/Users/zenghao/pj/justtest/cs/async/bin/Debug/net6.0/async.runtimeconfig.json
+/Users/zenghao/pj/justtest/cs/async/bin/Debug/net6.0/async.dll
+/Users/zenghao/pj/justtest/cs/async/bin/Debug/net6.0/async.pdb
+/Users/zenghao/pj/justtest/cs/async/obj/Debug/net6.0/async.csproj.AssemblyReference.cache
+/Users/zenghao/pj/justtest/cs/async/obj/Debug/net6.0/async.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zenghao/pj/justtest/cs/async/obj/Debug/net6.0/async.AssemblyInfoInputs.cache
+/Users/zenghao/pj/justtest/cs/async/obj/Debug/net6.0/async.AssemblyInfo.cs
+/Users/zenghao/pj/justtest/cs/async/obj/Debug/net6.0/async.csproj.CoreCompileInputs.cache
+/Users/zenghao/pj/justtest/cs/async/obj/Debug/net6.0/async.dll
+/Users/zenghao/pj/justtest/cs/async/obj/Debug/net6.0/refint/async.dll
+/Users/zenghao/pj/justtest/cs/async/obj/Debug/net6.0/async.pdb
+/Users/zenghao/pj/justtest/cs/async/obj/Debug/net6.0/async.genruntimeconfig.cache
+/Users/zenghao/pj/justtest/cs/async/obj/Debug/net6.0/ref/async.dll

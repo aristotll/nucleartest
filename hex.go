@@ -9,7 +9,7 @@ import (
 func main() {
 	src := []byte("abc123")
 	l := hex.DecodedLen(len(src))
-	b := make([]byte, l) 
+	b := make([]byte, l)
 
 	_, err := hex.Decode(b, src)
 	if err != nil {

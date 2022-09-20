@@ -19,7 +19,7 @@ func init() {
 		failureRatio := float64(counts.TotalFailures) / float64(counts.Requests)
 		return counts.Requests >= 3 && failureRatio >= 0.5
 	}
-	st.Timeout = time.Second * 10	// 从开启切换到半开的时间
+	st.Timeout = time.Second * 10 // 从开启切换到半开的时间
 	st.OnStateChange = func(name string, from, to gobreaker.State) {
 		log.Printf("state change: [%v] -> [%v]\n", from, to)
 	}

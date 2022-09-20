@@ -14,7 +14,7 @@ func main() {
 	ch <- 3
 	go func() {
 		defer wg.Done()
-		fmt.Println(<-ch)	
+		fmt.Println(<-ch)
 	}()
 	wg.Wait()
 }

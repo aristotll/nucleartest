@@ -1,9 +1,9 @@
 package main
 
 import (
-	"os/exec"
 	"log"
 	"os"
+	"os/exec"
 )
 
 func main() {
@@ -16,5 +16,5 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
-	log.Println("end")	
+	log.Println("end")
 }
