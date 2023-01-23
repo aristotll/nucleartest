@@ -13,6 +13,8 @@ func main() {
     mm["name"] = "zhang3"
     fmt.Println(mm)
 
+    m = map[string]string{}
+    fmt.Println(m)
     //var m1 map[string]string
     //m1["name"] = "zhang3"
     //fmt.Println(m1)

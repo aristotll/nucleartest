@@ -1,7 +1,7 @@
 #include <iostream>
 #include <functional>
 
-// 这种写法不支持 c++ 的 lamda 传参
+// 这种写法不支持 c++ 的 lambda 传参
 int fn(int x, int y, double (*func)(int x, int y)) {
     return func(x, y);
 }
