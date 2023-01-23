@@ -1,0 +1,31 @@
+测试机器：macbook air m1 8g
+
+不开启 arena:
+
+stretch tree of depth 22	 check: 8388607, took: 563.8935ms
+2097152	 trees of depth 4	 check: 65011712, took: 3.489116125s
+524288	 trees of depth 6	 check: 66584576, took: 3.510610875s
+131072	 trees of depth 8	 check: 66977792, took: 3.469542958s
+32768	 trees of depth 10	 check: 67076096, took: 3.6205585s
+8192	 trees of depth 12	 check: 67100672, took: 3.964528375s
+2048	 trees of depth 14	 check: 67106816, took: 3.897625375s
+512	 trees of depth 16	 check: 67108352, took: 3.562902583s
+128	 trees of depth 18	 check: 67108736, took: 4.694021542s
+32	 trees of depth 20	 check: 67108832, took: 4.96091s
+long lived tree of depth 21	 check: 4194303, took: 35.449024625s
+benchmark took: 36.013077667s
+
+开启 arena:
+
+stretch tree of depth 22	 check: 8388607, took: 477.930625ms
+2097152	 trees of depth 4	 check: 65011712, took: 3.114396333s
+524288	 trees of depth 6	 check: 66584576, took: 2.978444709s
+131072	 trees of depth 8	 check: 66977792, took: 2.857202667s
+32768	 trees of depth 10	 check: 67076096, took: 2.86991775s
+8192	 trees of depth 12	 check: 67100672, took: 2.907737875s
+2048	 trees of depth 14	 check: 67106816, took: 2.863894167s
+512	 trees of depth 16	 check: 67108352, took: 2.857188083s
+128	 trees of depth 18	 check: 67108736, took: 2.955270125s
+32	 trees of depth 20	 check: 67108832, took: 3.107296916s
+long lived tree of depth 21	 check: 4194303, took: 26.730462625s
+benchmark took: 27.2129065s
