@@ -1,0 +1,4 @@
+# mac 下链接动态库
+g++-12 main.cc -o main -L. -lsum -Wl,-rpath,.
+# linux 下链接动态库
+g++-12 main.cc -o main -L. -lsum -Wl,-rpath=.

@@ -1,9 +1,0 @@
-/Users/zenghao/pj/justtest/RustProject/http/target/debug/deps/httparse-5aaf7e6e1019b72b.rmeta: /Users/zenghao/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/lib.rs /Users/zenghao/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/iter.rs /Users/zenghao/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/macros.rs /Users/zenghao/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/simd/mod.rs /Users/zenghao/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/simd/fallback.rs
-
-/Users/zenghao/pj/justtest/RustProject/http/target/debug/deps/httparse-5aaf7e6e1019b72b.d: /Users/zenghao/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/lib.rs /Users/zenghao/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/iter.rs /Users/zenghao/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/macros.rs /Users/zenghao/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/simd/mod.rs /Users/zenghao/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/simd/fallback.rs
-
-/Users/zenghao/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/lib.rs:
-/Users/zenghao/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/iter.rs:
-/Users/zenghao/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/macros.rs:
-/Users/zenghao/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/simd/mod.rs:
-/Users/zenghao/.cargo/registry/src/mirrors.sjtug.sjtu.edu.cn-7a04d2510079875b/httparse-1.8.0/src/simd/fallback.rs:
