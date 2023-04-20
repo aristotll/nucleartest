@@ -3,10 +3,17 @@ package main
 import (
 	"net"
 	"net/http"
+    "os"
+    "log"
 )
 
 func main() {
-	l, e := net.Listen("tcp", ":6666")
+    addr := os.Getenv("addr")
+    if addr == "" {
+        addr = ":6666"
+    }
+    log.Printf("listen in %v\n", addr)
+	l, e := net.Listen("tcp", addr)
 	if e != nil {
 		panic(e)
 	}

@@ -4,11 +4,14 @@
 class Sales_data {
 private:
     std::string bookNo_;
-    unsigned units_gold_ = 0;
+    unsigned units_sold_ = 0;
     double revenue_ = 0.0;
 public:
-    Sales_data(std::string bookNo, unsigned units_gold, double revenue);
-    friend std::ostream& operator<<(std::ostream& io, Sales_data& obj); 
+    Sales_data(std::string bookNo, unsigned units_sold, double revenue) :
+  bookNo_(bookNo), units_sold_(units_sold), revenue_(revenue)  {}
+
+    friend std::ostream& operator<<(std::ostream& io, Sales_data& obj);
+    friend std::istream& operator>>(std::istream& io, Sales_data& obj); 
 };
 
 //
