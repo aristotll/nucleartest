@@ -1,0 +1,6 @@
+github.com/gohiweeds/twitterdownloader v0.0.0-20180913032655-ee86a6b59d6b h1:8wxNMfx7IrYuB4uV/2M5bFQthJBaE82oEOZr4tQiqOA=
+github.com/gohiweeds/twitterdownloader v0.0.0-20180913032655-ee86a6b59d6b/go.mod h1:xqM/3LNOsJdx5tDLa2EEvSZHMwanhz411jnE3yUzHMk=
+github.com/grafov/m3u8 v0.11.2 h1:e3jPdubtDNQSkMSzw4mp0X9+oGuLfGMDXGayYxW+sm0=
+github.com/grafov/m3u8 v0.11.2/go.mod h1:nqzOkfBiZJENr52zTVd/Dcl03yzphIMbJqkXGu+u080=
+golang.org/x/net v0.8.0 h1:Zrh2ngAOFYneWTAIAPethzeaQLuHwhuBkuV6ZiRnUaQ=
+golang.org/x/net v0.8.0/go.mod h1:QVkue5JL9kW//ek3r6jTKnTFis1tRmNAW2P1shuFdJc=
