@@ -230,6 +230,17 @@ func Arp(ctx context.Context, dstIP net.IP) {
 }
 
 // apt install -y libpcap-dev
+// apt install -y libpcap-dev
+//
+// Mac 下交叉编译：
+// brew tap messense/macos-cross-toolchains
+// # install x86_64-unknown-linux-gnu toolchain
+// brew install x86_64-unknown-linux-gnu
+// # install aarch64-unknown-linux-gnu toolchain
+// brew install aarch64-unknown-linux-gnu
+//
+// 编译:
+// GOOS=linux GOARCH=amd64 CGO_ENABLED=1 CC=x86_64-unknown-linux-gnu-gcc CGO_CFLAGS="-L/opt/homebrew/opt/libpcap/lib" go build -o arp_linux
 func main() {
 	log.SetFlags(log.LstdFlags | log.Lshortfile)
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*10)
