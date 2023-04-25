@@ -1,14 +1,16 @@
 package main
 
 import (
+	"context"
 	"fmt"
-	"github.com/google/gopacket/routing"
-	"log"
-	"net"
-
 	"github.com/google/gopacket"
 	"github.com/google/gopacket/layers"
 	"github.com/google/gopacket/pcap"
+	"github.com/google/gopacket/routing"
+	"log"
+	"net"
+	"sync"
+	"time"
 )
 
 // BroadcastAddr 是 MAC 广播地址
@@ -122,7 +124,9 @@ func (s *Scanner) send(input chan []string) error {
 	return nil
 }
 
-func Arp(dstIP net.IP) error {
+func Arp(ctx context.Context, dstIP net.IP) {
+	var wg sync.WaitGroup
+	wg.Add(1)
 	router, err := routing.New()
 	if err != nil {
 		log.Fatal(err)
@@ -148,53 +152,87 @@ func Arp(dstIP net.IP) error {
 	arp := &layers.ARP{
 		AddrType:          layers.LinkTypeEthernet,
 		Protocol:          layers.EthernetTypeIPv4,
-		HwAddressSize:     6,                          // MAC 地址的长度
-		ProtAddressSize:   4,                          // IP 地址的长度
-		Operation:         layers.ARPRequest,          // 操作类型，request or reply
-		SourceHwAddress:   []byte(iface.HardwareAddr), // 源 MAC 地址
-		SourceProtAddress: []byte(srcIP),              // 源 IP 地址
-		DstHwAddress:      []byte{0, 0, 0, 0, 0, 0},   // 目的 MAC 地址，这里设置为广播地址
-		DstProtAddress:    dstIP,                      // 目的 IP 地址
+		HwAddressSize:     6,                                                    // MAC 地址的长度
+		ProtAddressSize:   4,                                                    // IP 地址的长度
+		Operation:         layers.ARPRequest,                                    // 操作类型，request or reply
+		SourceHwAddress:   iface.HardwareAddr,                                   // 源 MAC 地址
+		SourceProtAddress: srcIP,                                                // 源 IP 地址
+		DstHwAddress:      net.HardwareAddr{0x00, 0x00, 0x00, 0x00, 0x00, 0x00}, // 目的 MAC 地址，这里设置为广播地址
+		DstProtAddress:    dstIP.To4(),                                          // 目的 IP 地址，这里一定要调用 To4（不知道为啥）
 	}
+
 	opts := gopacket.SerializeOptions{
 		FixLengths:       true,
 		ComputeChecksums: true,
 	}
 	buf := gopacket.NewSerializeBuffer()
+	// 分开方便 debug
 	if err := gopacket.SerializeLayers(buf, opts, eth, arp); err != nil {
-		return err
+		log.Fatalln(err)
 	}
+	//if err := gopacket.SerializeLayers(buf, opts, arp); err != nil {
+	//	log.Fatalln(err)
+	//}
 	if err := handle.WritePacketData(buf.Bytes()); err != nil {
-		return err
+		log.Fatalln(err)
 	}
-	// 读取响应报文
-	data, _, err := handle.ReadPacketData()
-	if err != nil {
-		return err
-	}
-	// 超时未收到目标设备回应
-	if err == pcap.NextErrorTimeoutExpired {
-		log.Println("ARP request timed out")
-		return nil
-	} else if err != nil {
-		return err
-	}
-	// 解析报文
-	packet := gopacket.NewPacket(data, layers.LayerTypeEthernet, gopacket.NoCopy)
-	// 看响应的报文是不是 ARP 类型的
-	if arpLayer := packet.Layer(layers.LayerTypeARP); arpLayer != nil {
-		arp := arpLayer.(*layers.ARP)
-		// 如果 ARP 响应报文的源 IP 地址
-		if net.IP(arp.SourceProtAddress).Equal(dstIP) {
-			fmt.Println(arp.SourceProtAddress)
-			return nil
+	go func() {
+		defer wg.Done()
+		ps := gopacket.NewPacketSource(handle, handle.LinkType())
+		// wait 3 seconds for an ARP reply.
+		for {
+			select {
+			case <-ctx.Done():
+				log.Println("wait reply timeout")
+				return
+			case p := <-ps.Packets():
+				// 看响应的报文是不是 ARP 类型的
+				if arpLayer := p.Layer(layers.LayerTypeARP); arpLayer != nil {
+					arp := arpLayer.(*layers.ARP)
+					if arp.Operation != layers.ARPReply {
+						log.Println("not ARP reply")
+						log.Println(arp.Operation, arp.DstProtAddress)
+						continue
+					}
+					// 如果 ARP 响应报文的源 IP 地址
+					if net.IP(arp.SourceProtAddress).Equal(dstIP) {
+						fmt.Println(arp.SourceProtAddress)
+					}
+				}
+			}
+			// 读取响应报文
+			//data, _, err := handle.ReadPacketData()
+			//if err != nil {
+			//	log.Fatalln(err)
+			//}
+			//// 超时未收到目标设备回应
+			//if err == pcap.NextErrorTimeoutExpired {
+			//	log.Println("ARP request timed out")
+			//	continue
+			//} else if err != nil {
+			//	log.Fatalln(err)
+			//}
+			//// 解析报文
+			//packet := gopacket.NewPacket(data, layers.LayerTypeEthernet, gopacket.NoCopy)
+			////println(packet.String())
+			//// 看响应的报文是不是 ARP 类型的
+			//if arpLayer := packet.Layer(layers.LayerTypeARP); arpLayer != nil {
+			//	arp := arpLayer.(*layers.ARP)
+			//	// 如果 ARP 响应报文的源 IP 地址
+			//	if net.IP(arp.SourceProtAddress).Equal(dstIP) {
+			//		fmt.Println(arp.SourceProtAddress)
+			//	}
+			//}
 		}
-	}
-	return nil
+	}()
+
+	wg.Wait()
 }
 
+// apt install -y libpcap-dev
 func main() {
-	if err := Arp(net.ParseIP("192.168.31.80")); err != nil {
-		panic(err)
-	}
+	log.SetFlags(log.LstdFlags | log.Lshortfile)
+	ctx, cancel := context.WithTimeout(context.Background(), time.Second*10)
+	defer cancel()
+	Arp(ctx, net.ParseIP("192.168.31.80"))
 }
