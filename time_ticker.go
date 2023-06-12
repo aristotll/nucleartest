@@ -11,7 +11,7 @@ func main() {
 	wg.Add(1)
 
 	go func() {
-		ticker := time.NewTicker(time.Second)
+		ticker := time.NewTicker(time.Second*3)
 		defer wg.Done()
 		for {
 			<-ticker.C
